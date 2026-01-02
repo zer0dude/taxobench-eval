@@ -1,0 +1,623 @@
+[
+  {
+    "id": "MAN-EASY-3.7-001",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'A' matches the ground truth.",
+    "facts_score": 0.9177417705998948,
+    "facts_reason": "The actual and expected outputs both contain 'internal_fact' type evidence with quote anchors that fuzzy match the key fact about manufacturing cement clinker (NACE C23.51). The critical information is present in both outputs, aligning well with the evaluation criteria.",
+    "source_score": 0.5052743645180662,
+    "source_reason": "The actual output correctly identifies the 'external_source' evidence type and matches the 'Annex I' and 'Section 3.7' in the citation_pointer field. However, it lacks the 'subsection' detail 'Description of the activity' present in the expected output, resulting in a partial match.",
+    "agent_response": {
+      "selected_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "citation_pointer": "N/A",
+          "quote_anchor": "...manufactures cement clinker (NACE C23.51). The brochure states..."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "citation_pointer": "Annex I | Section 3.7 | Description",
+          "quote_anchor": "...activity Manufacture of cement, including cement clinker, is covered..."
+        }
+      ],
+      "reasoning_logic": "The NACE code C23.51 for cement clinker manufacturing directly maps to Section 3.7 of the EU Taxonomy, which includes cement manufacturing as an eligible activity. The internal certificate claiming carbon neutrality is not relevant for determining eligibility, as the activity itself is explicitly listed in the Taxonomy."
+    },
+    "ground_truth": {
+      "correct_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "locator": {
+            "field": "context_snippet"
+          },
+          "version": null,
+          "quote_anchor": "A plant manufactures cement clinker (NACE C23.51). The brochure states: \"Our cement is carbon-neutral (internal certificate)\" but provides no other Taxonomy references."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": {
+            "annex": "Annex I",
+            "section": "3.7",
+            "subsection": "Description of the activity"
+          },
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "3.7.    Manufacture of cement Description of the activity Manufacture of cement clinker. The economic activities in this category could be associated with the NACE code C23.51 in accordance with the statistical classification"
+        }
+      ],
+      "reasoning_logic": "Eligibility is determined by whether the described economic activity is listed in Annex I (Manufacturing). Marketing claims and internal certificates do not affect whether the activity is listed."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.11-002",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'B' matches the ground truth.",
+    "facts_score": 0.8774574934338142,
+    "facts_reason": "The actual and expected outputs both contain 'internal_fact' type evidence. The quote anchors in both outputs mention the production of Carbon Black (NACE C20.13) and reference the sustainability report headline, which are key facts. The fuzzy match of these anchors with the key facts justifies a high score.",
+    "source_score": 0.5182289658167383,
+    "source_reason": "The actual output's citation_pointer 'Annex I | Section 3.11 | Description' partially matches the expected output's locator fields 'Annex I', 'section': '3.11', and 'subsection': 'Description of the activity'. However, the expected output provides a more detailed description, which is not fully captured in the actual output.",
+    "agent_response": {
+      "selected_option": "B",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "citation_pointer": "N/A",
+          "quote_anchor": "...produces Carbon Black (NACE C20.13). The sustainability report headline..."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "citation_pointer": "Annex I | Section 3.11 | Description",
+          "quote_anchor": "...activity Manufacture of carbon black..."
+        }
+      ],
+      "reasoning_logic": "The NACE code C20.13 directly corresponds to the manufacture of carbon black, which is explicitly covered under Section 3.11 of the EU Taxonomy. The sustainability report headline 'Low-Carbon Chemicals Division' is not relevant to the legal mapping of the actual operation."
+    },
+    "ground_truth": {
+      "correct_option": "B",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "locator": {
+            "field": "context_snippet"
+          },
+          "version": null,
+          "quote_anchor": "A facility produces Carbon Black (NACE C20.13). The sustainability report headline says: \"Low-Carbon Chemicals Division\"."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": {
+            "annex": "Annex I",
+            "section": "3.11",
+            "subsection": "Description of the activity"
+          },
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "3.11.    Manufacture of carbon black Description of the activity Manufacture of carbon black. The economic activities in this category could be associated with NACE code C20.13 in accordance with the statistical classification"
+        }
+      ],
+      "reasoning_logic": "Eligibility mapping follows the actual described activity (carbon black production) and its associated NACE code, not a generic sustainability headline."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.9-003",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'B' matches the ground truth.",
+    "facts_score": 0.9813365547885102,
+    "facts_reason": "The actual and expected outputs both contain 'internal_fact' type evidence. The quote anchors in both outputs match the key fact about the core operation being steelmaking with NACE C24.10 and product output being hot-rolled steel, indicating a strong alignment.",
+    "source_score": 0.5379290939279724,
+    "source_reason": "The actual output correctly identifies the 'external_source' evidence type and matches the source with the expected output. The citation_pointer 'Annex I | Section 3.9 | Description' partially aligns with the expected locator fields 'Annex I', 'Section 3.9', and 'Description of the activity', but lacks the 'subsection' detail. This partial match results in a score reflecting partial correctness.",
+    "agent_response": {
+      "selected_option": "B",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "citation_pointer": "N/A",
+          "quote_anchor": "...dossier lists the core operation as steelmaking with NACE C24.10 and product output: hot-rolled steel..."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "citation_pointer": "Annex I | Section 3.9 | Description",
+          "quote_anchor": "...activity Manufacture of iron and steel, including hot-rolled steel..."
+        }
+      ],
+      "reasoning_logic": "The dossier clearly identifies the core operation as steelmaking with NACE code C24.10 and the product output as hot-rolled steel. This directly maps to Section 3.9 of the EU Taxonomy, which covers the manufacture of iron and steel. The website's claim of being a battery manufacturer is a misdirection and not supported by the technical dossier."
+    },
+    "ground_truth": {
+      "correct_option": "B",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "locator": {
+            "field": "context_snippet"
+          },
+          "version": null,
+          "quote_anchor": "A company website claims: \"We are a battery manufacturer.\" However, the dossier lists the core operation as steelmaking with NACE C24.10 and product output: hot-rolled steel."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": {
+            "annex": "Annex I",
+            "section": "3.9",
+            "subsection": "Description of the activity"
+          },
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "3.9.    Manufacture of iron and steel Description of the activity Manufacture of iron and steel. The economic activities in this category could be associated with NACE codes C24.10, C24.20 and C24.30 in accordance"
+        }
+      ],
+      "reasoning_logic": "Eligibility screening should follow the primary evidenced activity in the technical dossier (steelmaking, NACE C24.10), not marketing/website positioning."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.1-004",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'C' matches the ground truth.",
+    "facts_score": 0.9929681874210677,
+    "facts_reason": "The actual and expected outputs both contain 'internal_fact' type evidence. The quote_anchors in both outputs are nearly identical, with only minor differences in wording that do not affect the key facts. Therefore, the anchors fuzzy match the key facts, justifying a high score.",
+    "source_score": 0.6939936910502322,
+    "source_reason": "The actual output correctly identifies the 'external_source' evidence type and matches the 'citation_pointer' fields for both entries with the expected output, specifically 'Annex I | Section 3.1 | Description' and 'Annex I | Section 3.2 | Description'. However, it lacks the 'subsection' detail present in the expected output, resulting in a partial match.",
+    "agent_response": {
+      "selected_option": "C",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "citation_pointer": "N/A",
+          "quote_anchor": "...reports NACE C25 (manufacture of fabricated metal products). The sales deck says it produces \"components for wind turbines\" while an internal memo says \"electrolyser frames for hydrogen\"..."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "citation_pointer": "Annex I | Section 3.1 | Description",
+          "quote_anchor": "...Manufacture of renewable energy technologies includes wind turbines and their components..."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "citation_pointer": "Annex I | Section 3.2 | Description",
+          "quote_anchor": "...Manufacture of equipment for the production and use of hydrogen includes electrolysers and their components..."
+        }
+      ],
+      "reasoning_logic": "The NACE code C25 is associated with the manufacture of fabricated metal products, which can include components for both wind turbines and electrolysers. The sales deck and internal memo suggest potential alignment with both Section 3.1 and Section 3.2 of the EU Taxonomy. However, without a specific product list or further detail, it is not possible to uniquely map the activity to a single EU Taxonomy reference. Therefore, the conclusion is inconclusive."
+    },
+    "ground_truth": {
+      "correct_option": "C",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "locator": {
+            "field": "context_snippet"
+          },
+          "version": null,
+          "quote_anchor": "A plant reports NACE C25 (manufacture of fabricated metal products). The sales deck says it produces \"components for wind turbines\" while an internal memo says \"electrolyser frames for hydrogen\". No product list is provided."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": {
+            "annex": "Annex I",
+            "section": "3.1",
+            "subsection": "NACE association"
+          },
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "3.1.    Manufacture of renewable energy technologies Description of the activity Manufacture of renewable energy technologies. The economic activities in this category could be associated with NACE codes C25, C27, and C28"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": {
+            "annex": "Annex I",
+            "section": "3.2",
+            "subsection": "NACE association"
+          },
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "3.2.    Manufacture of equipment for the production and use of hydrogen Description of the activity Manufacture of equipment for the production and use of hydrogen. The economic activities in this category could be associated with NACE codes C25 and C28"
+        }
+      ],
+      "reasoning_logic": "With only NACE C25 and conflicting product descriptions (wind components vs electrolyser frames), the snippet supports multiple plausible EU Taxonomy Manufacturing mappings (Sections 3.1 and 3.2). Without a definitive product list, a unique mapping is not justified."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.8-005",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'A' matches the ground truth.",
+    "facts_score": 1.0,
+    "facts_reason": "The actual and expected outputs both contain 'internal_fact' type evidence with quote_anchors that fuzzy match the key facts. The quote_anchors in both outputs are nearly identical, covering the critical facts about the facility listing NACE C24.42, producing primary aluminium, and the annual report headline. This strong alignment justifies the highest score.",
+    "source_score": 0.5152316706613416,
+    "source_reason": "The actual and expected outputs both contain evidence of type 'external_source' and refer to the same source 'ELI:reg_del/2021/2139/oj'. The citation pointer in the actual output 'Annex I | Section 3.8 | Description' partially matches the expected locator fields 'Annex I', 'section 3.8', and 'subsection Description of the activity', indicating a partial correct pointer.",
+    "agent_response": {
+      "selected_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "citation_pointer": "N/A",
+          "quote_anchor": "facility lists NACE C24.42 and produces primary aluminium. The annual report headline says: \"Low-carbon steel transformation program\"."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "citation_pointer": "Annex I | Section 3.8 | Description",
+          "quote_anchor": "...activity Manufacture of aluminium through primary alumina (bauxite) process or..."
+        }
+      ],
+      "reasoning_logic": "The NACE code C24.42 and the production of 'primary aluminium' directly correspond to Section 3.8 of the EU Taxonomy, which covers the manufacture of aluminium. The mention of a 'Low-carbon steel transformation program' in the report headline is a misdirection and does not affect the eligibility category for the actual operation."
+    },
+    "ground_truth": {
+      "correct_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "locator": {
+            "field": "context_snippet"
+          },
+          "version": null,
+          "quote_anchor": "A facility lists NACE C24.42 and produces primary aluminium. The annual report headline says: \"Low-carbon steel transformation program\"."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": {
+            "annex": "Annex I",
+            "section": "3.8",
+            "subsection": "Description of the activity"
+          },
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "3.8.    Manufacture of aluminium Description of the activity Manufacture of primary aluminium. The economic activities in this category could be associated with NACE codes C24.42 and C24.43 in accordance"
+        }
+      ],
+      "reasoning_logic": "Eligibility mapping should follow the described production activity and its NACE code association (primary aluminium, C24.42), not an unrelated annual report headline."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.18-006",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'A' matches the ground truth.",
+    "facts_score": 0.9151773554493401,
+    "facts_reason": "The actual and expected outputs both contain 'internal_fact' type evidence. The quote_anchor in the actual output closely matches the key facts in the expected output, covering the main points about drivetrain components, power electronics, and NACE C29.3. This alignment indicates a strong fuzzy match with the key facts.",
+    "source_score": 0.0,
+    "source_reason": "The actual output's citation pointer 'Annex I | Section 3.18 | Description' does not match any of the expected citation pointers in the expected output, which are 'Annex I, Section 3.18 (Description of the activity)', 'Annex I, Section 3.18 (NACE association)', and 'Annex I, Section 3.18 (Scope/exclusion note)'. Therefore, the pointer is incorrect.",
+    "agent_response": {
+      "selected_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "citation_pointer": "N/A",
+          "quote_anchor": "...produces drivetrain components and power electronics for vehicles. The dossier lists NACE C29.3 and notes..."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "citation_pointer": "Annex I | Section 3.18 | Description",
+          "quote_anchor": "...activity Manufacture of automotive and mobility components..."
+        }
+      ],
+      "reasoning_logic": "The NACE code C29.3 corresponds to the manufacture of parts and accessories for motor vehicles, which aligns with Section 3.18 of the EU Taxonomy. The marketing claim of 'EU Taxonomy certified' is not a recognized concept within the EU Taxonomy framework and does not affect the eligibility assessment. The focus on drivetrain components and power electronics for vehicles directly maps to the manufacture of automotive and mobility components."
+    },
+    "ground_truth": {
+      "correct_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source_id": "context_snippet",
+          "location": "",
+          "version": "",
+          "quote": "manufacturer produces drivetrain components and power electronics for vehicles. The dossier lists"
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source_id": "context_snippet",
+          "location": "",
+          "version": "",
+          "quote": "for vehicles. The dossier lists NACE C29.3 and \"Our products improve\""
+        },
+        {
+          "evidence_type": "external_source",
+          "source_id": "ELI:reg_del/2023/2485/oj",
+          "location": "Annex I, Section 3.18 (Description of the activity)",
+          "version": "OJ 2023-11-21",
+          "quote": "retrofitting, repurposing and upgrade of mobility components for zero-emission personal mobility devices"
+        },
+        {
+          "evidence_type": "external_source",
+          "source_id": "ELI:reg_del/2023/2485/oj",
+          "location": "Annex I, Section 3.18 (NACE association)",
+          "version": "OJ 2023-11-21",
+          "quote": "26.3, 26.4, C28.14, C28.15, C29.2, C29.3, and C33.17 in accordance with"
+        },
+        {
+          "evidence_type": "external_source",
+          "source_id": "ELI:reg_del/2023/2485/oj",
+          "location": "Annex I, Section 3.18 (Scope/exclusion note)",
+          "version": "OJ 2023-11-21",
+          "quote": "activities in this category are excluded from Sections 3.3. and 3.6. of this Annex. Where Sections"
+        }
+      ],
+      "reasoning_logic": "Eligibility mapping follows the evidenced underlying activity and its NACE coding. Section 3.18 explicitly covers automotive/mobility components and explicitly associates the activity with NACE C29.3; it also states these activities are excluded from Sections 3.3 and 3.6, so 3.18 is the best-fit eligibility category."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.21-007",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'B' matches the ground truth.",
+    "facts_score": 0.7217248594187431,
+    "facts_reason": "The actual and expected outputs both contain 'internal_fact' type evidence. The quote anchors in both outputs mention the manufacturing of aircraft parts and the NACE C30.3 listing, which are key facts. However, the actual output omits the additional detail about rail decarbonisation and the lack of rail revenue breakdown, indicating a loose rather than fuzzy match.",
+    "source_score": 0.32567743233302715,
+    "source_reason": "The actual output correctly identifies the citation pointer as 'Annex I | Section 3.21 | Description', which partially matches the expected locator fields 'Annex I', 'section': '3.21', and 'subsection': 'Description of the activity'. However, the source in the actual output does not match the expected source, and the expected output contains additional evidence not present in the actual output.",
+    "agent_response": {
+      "selected_option": "B",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "citation_pointer": "N/A",
+          "quote_anchor": "...manufactures aircraft parts and performs overhaul and retrofitting. The dossier lists NACE C30.3. The press release..."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "citation_pointer": "Annex I | Section 3.21 | Description",
+          "quote_anchor": "...activity Manufacture of aircraft and spacecraft and related machinery..."
+        }
+      ],
+      "reasoning_logic": "The NACE code C30.3 corresponds to the manufacture of aircraft and spacecraft, which aligns with Section 3.21 of the EU Taxonomy. The mention of rail decarbonisation in the press release is not supported by any revenue or activity data and is likely a misdirection. Therefore, the most direct match is option B."
+    },
+    "ground_truth": {
+      "correct_option": "B",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "locator": {
+            "field": "context_snippet"
+          },
+          "version": null,
+          "quote_anchor": "A company manufactures aircraft parts and performs overhaul and retrofitting. The dossier lists NACE C30.3. The press release says: \"We also support rail decarbonisation\" but provides no rail revenue breakdown."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2023/2485/oj",
+          "locator": {
+            "annex": "Annex I",
+            "section": "3.21",
+            "subsection": "Description of the activity"
+          },
+          "version": "OJ L, 21.11.2023",
+          "quote_anchor": "3.21.   Manufacturing of aircraft Description of the activity Manufacture, repair, maintenance, overhaul, retrofitting, design, repurposing and upgrade of aircraft and aircraft parts and equipment"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2023/2485/oj",
+          "locator": {
+            "annex": "Annex I",
+            "section": "3.21",
+            "subsection": "NACE association"
+          },
+          "version": "OJ L, 21.11.2023",
+          "quote_anchor": "could be associated with a NACE code, in particular C30.3 and C33.16, in accordance with the statistical classification of economic activities established by Regulation (EC) No 1893/2006"
+        }
+      ],
+      "reasoning_logic": "Eligibility screening should follow the evidenced primary activity in the dossier (aircraft parts, overhaul/retrofitting; NACE C30.3), not an unquantified mention of another sector in a press release."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.4-008",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'A' matches the ground truth.",
+    "facts_score": 0.5,
+    "facts_reason": "The actual and expected outputs both contain 'internal_fact' type evidence with similar quote anchors mentioning lithium-ion battery cell production and NACE C27.2. However, the actual output lacks details about the recycling line and the '100% aligned' claim, indicating a loose coverage of facts rather than a fuzzy match.",
+    "source_score": 0.5369326787563614,
+    "source_reason": "The actual output correctly identifies the 'external_source' type and matches the 'citation_pointer' with 'Annex I | Section 3.4 | Description'. However, it lacks the 'subsection' detail present in the expected output, which is 'Description of the activity'. This results in a partial match.",
+    "agent_response": {
+      "selected_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "citation_pointer": "N/A",
+          "quote_anchor": "...produces lithium-ion battery cells. The dossier lists NACE C27.2 and includes..."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "citation_pointer": "Annex I | Section 3.4 | Description",
+          "quote_anchor": "...activity Manufacture of batteries, including lithium-ion battery cells..."
+        }
+      ],
+      "reasoning_logic": "The NACE code C27.2 and the production of lithium-ion battery cells directly correspond to Section 3.4 of the EU Taxonomy, which covers the manufacture of batteries. The mention of recycling is a separate activity and does not affect the eligibility assessment for the battery cell production line. The brochure's claim of '100% aligned' is not substantiated with evidence and is disregarded."
+    },
+    "ground_truth": {
+      "correct_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "locator": {
+            "field": "context_snippet"
+          },
+          "version": null,
+          "quote_anchor": "A company produces lithium-ion battery cells. The dossier lists NACE C27.2 and includes a separate recycling line described as \"battery waste sorting\". A brochure claims: \"100% aligned\" without references."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": {
+            "annex": "Annex I",
+            "section": "3.4",
+            "subsection": "Description of the activity"
+          },
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "3.4.    Manufacture of batteries Description of the activity Manufacture of rechargeable batteries, battery packs and accumulators for transport, stationary and off-grid energy storage and other industrial applications and manufacture of respective components (battery active materials, battery cells, casings and electronic components)"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": {
+            "annex": "Annex I",
+            "section": "3.4",
+            "subsection": "NACE association"
+          },
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "The economic activities in this category could be associated with NACE codes C27.20, C27.2 and E38.3.2 in accordance with the statistical classification of economic activities established by Regulation (EC) No 1893/2006"
+        }
+      ],
+      "reasoning_logic": "The question concerns the battery cell manufacturing line; that maps to Section 3.4. Mention of a separate recycling/sorting line and generic “aligned” marketing does not change the eligibility category for the manufacturing activity."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.10-009",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'B' matches the ground truth.",
+    "facts_score": 0.8256774391008872,
+    "facts_reason": "The actual output contains two internal_fact type evidence ledgers that match the key facts in the expected output. The quote_anchors in the actual output ('...technical dossier states: \"Output: hydrogen gas\"...' and '...produces hydrogen (NACE C20.11). The CEO states...') are fuzzy matches to the expected quote_anchor, covering the critical facts about hydrogen production and the technical dossier statement.",
+    "source_score": 0.5379290907940918,
+    "source_reason": "The actual output correctly identifies the 'external_source' evidence type and matches the expected source 'ELI:reg_del/2021/2139/oj'. The citation pointer 'Annex I | Section 3.10 | Description' partially matches the expected locator fields 'Annex I', 'Section 3.10', and 'Description of the activity', but lacks the 'subsection' detail. Therefore, it is a partial match.",
+    "agent_response": {
+      "selected_option": "B",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "citation_pointer": "N/A",
+          "quote_anchor": "...technical dossier states: \"Output: hydrogen gas\"..."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "citation_pointer": "N/A",
+          "quote_anchor": "...produces hydrogen (NACE C20.11). The CEO states..."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "citation_pointer": "Annex I | Section 3.10 | Description",
+          "quote_anchor": "...activity Manufacture of hydrogen through electrolysis or other..."
+        }
+      ],
+      "reasoning_logic": "The technical dossier clearly states the output as 'hydrogen gas', and the NACE code C20.11 corresponds to the production of hydrogen. Despite the CEO's statement about manufacturing equipment, the actual production activity is the manufacture of hydrogen, which aligns with Section 3.10. The CEO's statement is considered misdirection data."
+    },
+    "ground_truth": {
+      "correct_option": "B",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "locator": {
+            "field": "context_snippet"
+          },
+          "version": null,
+          "quote_anchor": "A plant produces hydrogen (NACE C20.11). The CEO states: \"We only manufacture hydrogen equipment, not hydrogen itself.\" The technical dossier states: \"Output: hydrogen gas\"."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": {
+            "annex": "Annex I",
+            "section": "3.10",
+            "subsection": "Description of the activity"
+          },
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "3.10.    Manufacture of hydrogen Description of the activity Manufacture of hydrogen and hydrogen-based synthetic fuels. The economic activities in this category could be associated with NACE code C20.11 in accordance with the statistical classification"
+        }
+      ],
+      "reasoning_logic": "Eligibility mapping should follow the technical dossier’s described output (hydrogen gas) and the corresponding Annex I activity (Section 3.10), not a contradictory executive statement."
+    }
+  },
+  {
+    "id": "MAN-EASY-FAKE-3.22-010",
+    "correct_option": false,
+    "mcq_score": 0.0,
+    "mcq_reason": "The selected option 'B' does not match the ground truth 'A'.",
+    "facts_score": 0.6243822492660641,
+    "facts_reason": "The actual and expected outputs both contain 'internal_fact' type evidence. The quote anchors in both outputs mention the development and manufacturing of smart grid switchgear and substations, and the NACE codes C27.1 and C33.14, indicating a loose coverage of key facts. However, the actual output is missing details about the eligibility under 'Activity 3.22' and the slogan 'Green grid certified', which are present in the expected output.",
+    "source_score": 0.0,
+    "source_reason": "The actual output contains a citation_pointer 'Annex I | Section 3.22 | Description' which does not match any citation_pointer in the expected output. The expected output contains different sections and subsections, none of which align with the actual output's pointer.",
+    "agent_response": {
+      "selected_option": "B",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "citation_pointer": "N/A",
+          "quote_anchor": "...develops and manufactures smart grid switchgear and substations. The dossier lists NACE C27.1 and C33.14. Marketing materials claim..."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "citation_pointer": "Annex I | Section 3.22 | Description",
+          "quote_anchor": "...activity Manufacture of smart-grid equipment includes the development and manufacture of..."
+        }
+      ],
+      "reasoning_logic": "The NACE codes C27.1 and C33.14, along with the specific mention of 'smart grid switchgear and substations', align with the description of 'Manufacture of smart-grid equipment' under Section 3.22. The marketing slogan 'Green grid certified' is not a legal term and does not affect the eligibility mapping. Therefore, the correct reference is 3.22."
+    },
+    "ground_truth": {
+      "correct_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "locator": {
+            "field": "context_snippet"
+          },
+          "version": null,
+          "quote_anchor": "A company develops and manufactures smart grid switchgear and substations. The dossier lists NACE C27.1 and C33.14. Marketing materials claim the activity is eligible under \"Activity 3.22 – Manufacture of smart-grid equipment\" and uses the slogan \"Green grid certified\"."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2023/2485/oj",
+          "locator": {
+            "annex": "Annex I",
+            "amendment": "Added Sections 3.18–3.21"
+          },
+          "version": "OJ L, 21.11.2023",
+          "quote_anchor": "(2) the following Sections 3.18., 3.19., 3.20. and 3.21. are added: ‘3.18.   Manufacture of automotive and mobility components"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2023/2485/oj",
+          "locator": {
+            "annex": "Annex I",
+            "section": "3.20",
+            "subsection": "Title"
+          },
+          "version": "OJ L, 21.11.2023",
+          "quote_anchor": "3.20.   Manufacture, installation, and servicing of high, medium and low voltage electrical equipment for electrical transmission and distribution that result in or enable a substantial contribution to climate change mitigation Description of the activity"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2023/2485/oj",
+          "locator": {
+            "annex": "Annex I",
+            "section": "3.20",
+            "subsection": "NACE association"
+          },
+          "version": "OJ L, 21.11.2023",
+          "quote_anchor": "The economic activities in this category could be associated with several NACE codes, in particular, C27.1, C27.12, C27.9, C28.2, C33.12, C33.13, C33.14, C33.2, and F43.21, in accordance with the statistical classification of economic activities established by Regulation (EC) No 1893/2006"
+        }
+      ],
+      "reasoning_logic": "The described products (switchgear/substations) and NACE codes (C27.1, C33.14) map to Section 3.20. The cited “Activity 3.22” is not part of the added Manufacturing sections (the update adds Sections 3.18–3.21), so eligibility mapping should use the correct existing activity reference."
+    }
+  }
+]

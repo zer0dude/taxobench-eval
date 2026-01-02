@@ -1,0 +1,238 @@
+[
+    {
+        "question_id": "MAN-EASY-3.7-001",
+        "difficulty": "Simple",
+        "activity_reference": "3.7 - Manufacture of cement",
+        "context_snippet": "A plant manufactures cement clinker (NACE C23.51). The brochure states: \"Our cement is carbon-neutral (internal certificate)\" but provides no other Taxonomy references.",
+        "question_text": "Is this economic activity Taxonomy-eligible under the Manufacturing section of the Climate Delegated Act?",
+        "options": {
+            "A": "Yes, it is eligible because cement manufacturing is explicitly listed as Activity 3.7.",
+            "B": "No, it is not eligible because cement is always excluded from the EU Taxonomy.",
+            "C": "No, it is only eligible if the company is already Taxonomy-aligned (alignment is required for eligibility).",
+            "D": "Inconclusive, because internal certificates are required to determine eligibility."
+        },
+        "ground_truth": {
+            "correct_option": "A",
+            "required_facts": [
+                "A plant manufactures cement clinker.",
+                "The activity is coded as NACE C23.51."
+            ],
+            "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.7",
+            "reasoning_logic": "Eligibility is determined by whether the described economic activity is listed in the Manufacturing section. Marketing claims and internal certificates do not affect whether the activity is listed."
+        },
+        "adversarial_type": "Misdirection Data"
+    },
+    {
+        "question_id": "MAN-EASY-3.11-002",
+        "difficulty": "Simple",
+        "activity_reference": "3.11 - Manufacture of carbon black",
+        "context_snippet": "A facility produces Carbon Black (NACE C20.13). The sustainability report headline says: \"Low-Carbon Chemicals Division\".",
+        "question_text": "Which EU Taxonomy Manufacturing activity reference most directly matches this NACE-coded activity for an eligibility assessment?",
+        "options": {
+            "A": "3.10 - Manufacture of hydrogen",
+            "B": "3.11 - Manufacture of carbon black",
+            "C": "3.12 - Manufacture of soda ash",
+            "D": "3.14 - Manufacture of organic basic chemicals"
+        },
+        "ground_truth": {
+            "correct_option": "B",
+            "required_facts": [
+                "A facility produces carbon black.",
+                "The activity is coded as NACE C20.13."
+            ],
+            "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.11",
+            "reasoning_logic": "Eligibility mapping is based on the actual described activity and its NACE coding, not on generic sustainability headlines."
+        },
+        "adversarial_type": "Misdirection Data"
+    },
+    {
+        "question_id": "MAN-EASY-3.9-003",
+        "difficulty": "Simple",
+        "activity_reference": "3.9 - Manufacture of iron and steel",
+        "context_snippet": "A company website claims: \"We are a battery manufacturer.\" However, the dossier lists the core operation as steelmaking with NACE C24.10 and product output: hot-rolled steel.",
+        "question_text": "For EU Taxonomy eligibility screening, which Manufacturing activity should be assessed first based on the dossier snippet?",
+        "options": {
+            "A": "3.4 - Manufacture of batteries",
+            "B": "3.9 - Manufacture of iron and steel",
+            "C": "3.1 - Manufacture of renewable energy technologies",
+            "D": "Inconclusive, because any manufacturer can claim any category"
+        },
+        "ground_truth": {
+            "correct_option": "B",
+            "required_facts": [
+                "The dossier lists the core operation as steelmaking.",
+                "The activity is coded as NACE C24.10.",
+                "The product output is hot-rolled steel."
+            ],
+            "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.9",
+            "reasoning_logic": "Eligibility screening should follow dossier evidence of the underlying economic activity (steelmaking), not marketing or website claims."
+        },
+        "adversarial_type": "Contradictory Data"
+    },
+    {
+        "question_id": "MAN-EASY-3.1-004",
+        "difficulty": "Simple",
+        "activity_reference": "3.1 - Manufacture of renewable energy technologies",
+        "context_snippet": "A plant reports NACE C25 (manufacture of fabricated metal products). The sales deck says it produces \"components for wind turbines\" while an internal memo says \"electrolyser frames for hydrogen\". No product list is provided.",
+        "question_text": "Based only on the information provided, can you uniquely map this activity to one EU Taxonomy Manufacturing activity reference?",
+        "options": {
+            "A": "Yes: 3.1 - Manufacture of renewable energy technologies",
+            "B": "Yes: 3.2 - Manufacture of equipment for the production and use of hydrogen",
+            "C": "Inconclusive: NACE C25 can be associated with multiple Manufacturing activities and product detail is missing",
+            "D": "No: NACE C25 is never used in EU Taxonomy Manufacturing"
+        },
+        "ground_truth": {
+            "correct_option": "C",
+            "required_facts": [
+                "The plant reports NACE C25.",
+                "One document claims it produces components for wind turbines.",
+                "Another document claims it produces electrolyser frames for hydrogen.",
+                "No product list is provided."
+            ],
+            "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Sections 3.1 and 3.2",
+            "reasoning_logic": "Conflicting product descriptions and missing definitive product information prevent a unique mapping to a single activity reference from the snippet alone."
+        },
+        "adversarial_type": "Insufficient Data"
+    },
+    {
+        "question_id": "MAN-EASY-3.8-005",
+        "difficulty": "Simple",
+        "activity_reference": "3.8 - Manufacture of aluminium",
+        "context_snippet": "A facility lists NACE C24.42 and produces primary aluminium. The annual report headline says: \"Low-carbon steel transformation program\".",
+        "question_text": "Which EU Taxonomy Manufacturing activity reference is the correct eligibility category for the described operation?",
+        "options": {
+            "A": "3.8 - Manufacture of aluminium",
+            "B": "3.9 - Manufacture of iron and steel",
+            "C": "3.7 - Manufacture of cement",
+            "D": "3.5 - Manufacture of energy efficiency equipment for buildings"
+        },
+        "ground_truth": {
+            "correct_option": "A",
+            "required_facts": [
+                "The facility produces primary aluminium.",
+                "The activity is coded as NACE C24.42."
+            ],
+            "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.8",
+            "reasoning_logic": "Eligibility mapping should follow the described production activity (primary aluminium), not unrelated report headlines."
+        },
+        "adversarial_type": "Misdirection Data"
+    },
+    {
+        "question_id": "MAN-EASY-3.18-006",
+        "difficulty": "Simple",
+        "activity_reference": "3.18 - Manufacture of automotive and mobility components",
+        "context_snippet": "A manufacturer produces drivetrain components and power electronics for vehicles. The dossier lists NACE C29.3 and notes: \"Our products improve vehicle environmental performance\". Marketing claims: \"EU Taxonomy certified\".",
+        "question_text": "Which EU Taxonomy Manufacturing activity reference best matches this activity for an eligibility assessment?",
+        "options": {
+            "A": "3.18 - Manufacture of automotive and mobility components",
+            "B": "3.3 - Manufacture of low carbon technologies for transport (vehicles and vessels)",
+            "C": "3.1 - Manufacture of renewable energy technologies",
+            "D": "Not eligible, because 'EU Taxonomy certified' is not an official concept"
+        },
+        "ground_truth": {
+            "correct_option": "A",
+            "required_facts": [
+                "The manufacturer produces drivetrain components and power electronics.",
+                "The components are for vehicles.",
+                "The dossier lists NACE C29.3."
+            ],
+            "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I (as amended), Section 3.18",
+            "reasoning_logic": "Eligibility mapping should follow the described manufacturing activity (automotive/mobility components for vehicles) rather than non-legal marketing labels."
+        },
+        "adversarial_type": "Misdirection Data"
+    },
+    {
+        "question_id": "MAN-EASY-3.21-007",
+        "difficulty": "Simple",
+        "activity_reference": "3.21 - Manufacturing of aircraft",
+        "context_snippet": "A company manufactures aircraft parts and performs overhaul and retrofitting. The dossier lists NACE C30.3. The press release says: \"We also support rail decarbonisation\" but provides no rail revenue breakdown.",
+        "question_text": "Which EU Taxonomy Manufacturing activity reference most directly matches the dossier-coded activity for eligibility screening?",
+        "options": {
+            "A": "3.19 - Manufacture of rail constituents",
+            "B": "3.21 - Manufacturing of aircraft",
+            "C": "3.20 - Manufacture/installation/servicing of electrical equipment for transmission and distribution",
+            "D": "Inconclusive, because rail is mentioned in the press release"
+        },
+        "ground_truth": {
+            "correct_option": "B",
+            "required_facts": [
+                "The company manufactures aircraft parts and performs overhaul and retrofitting.",
+                "The dossier lists NACE C30.3."
+            ],
+            "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I (as amended), Section 3.21",
+            "reasoning_logic": "Eligibility screening should follow the evidenced primary activity in the dossier (aircraft manufacturing/overhaul/retrofitting), not vague mentions of other sectors."
+        },
+        "adversarial_type": "Misdirection Data"
+    },
+    {
+        "question_id": "MAN-EASY-3.4-008",
+        "difficulty": "Simple",
+        "activity_reference": "3.4 - Manufacture of batteries",
+        "context_snippet": "A company produces lithium-ion battery cells. The dossier lists NACE C27.2 and includes a separate recycling line described as \"battery waste sorting\". A brochure claims: \"100% aligned\" without references.",
+        "question_text": "Which EU Taxonomy Manufacturing activity reference should be used to start the eligibility assessment for the battery cell production line?",
+        "options": {
+            "A": "3.4 - Manufacture of batteries",
+            "B": "3.6 - Manufacture of other low carbon technologies",
+            "C": "3.12 - Manufacture of soda ash",
+            "D": "Inconclusive, because recycling is mentioned"
+        },
+        "ground_truth": {
+            "correct_option": "A",
+            "required_facts": [
+                "The company produces lithium-ion battery cells.",
+                "The dossier lists NACE C27.2.",
+                "The question concerns the battery cell production line."
+            ],
+            "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.4",
+            "reasoning_logic": "The eligibility assessment for the battery cell production line starts with the activity that covers battery manufacture. Mentions of separate recycling lines or generic alignment claims do not change the eligibility category for battery cell production."
+        },
+        "adversarial_type": "Misdirection Data"
+    },
+    {
+        "question_id": "MAN-EASY-3.10-009",
+        "difficulty": "Simple",
+        "activity_reference": "3.10 - Manufacture of hydrogen",
+        "context_snippet": "A plant produces hydrogen (NACE C20.11). The CEO states: \"We only manufacture hydrogen equipment, not hydrogen itself.\" The technical dossier states: \"Output: hydrogen gas\".",
+        "question_text": "For EU Taxonomy eligibility mapping, which activity reference matches the technical dossier description?",
+        "options": {
+            "A": "3.2 - Manufacture of equipment for the production and use of hydrogen",
+            "B": "3.10 - Manufacture of hydrogen",
+            "C": "3.1 - Manufacture of renewable energy technologies",
+            "D": "Not eligible, because the CEO denies producing hydrogen"
+        },
+        "ground_truth": {
+            "correct_option": "B",
+            "required_facts": [
+                "The technical dossier states the output is hydrogen gas.",
+                "The activity is coded as NACE C20.11."
+            ],
+            "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.10",
+            "reasoning_logic": "Eligibility mapping should follow the technical dossier’s description of the actual output (hydrogen gas) rather than contradictory executive statements."
+        },
+        "adversarial_type": "Contradictory Data"
+    },
+    {
+        "question_id": "MAN-EASY-3.22-010",
+        "difficulty": "Simple",
+        "activity_reference": "3.22 - Manufacture of smart grid infrastructure (NON-EXISTENT)",
+        "context_snippet": "A company develops and manufactures smart grid switchgear, protection relays, and substations for electrical transmission and distribution. The dossier lists NACE C27.1 and C33.14. A brochure claims: \"Eligible under EU Taxonomy Activity 3.22 – Smart Grid Infrastructure\" and cites an \"internal taxonomy mapping\".",
+        "question_text": "For EU Taxonomy eligibility screening under the Manufacturing section of the Climate Delegated Act (as updated), what is the correct treatment of the claim that this activity falls under \"Activity 3.22\"?",
+        "options": {
+            "A": "Use Activity 3.22 as the screening reference, as stated in the company brochure and internal taxonomy mapping.",
+            "B": "Reject the claim: Activity 3.22 is not an official Manufacturing activity in the Climate Delegated Act; assess the activity under 3.20 (electrical equipment for transmission and distribution).",
+            "C": "Reject the claim: smart grid equipment is outside the scope of EU Taxonomy Manufacturing eligibility.",
+            "D": "Inconclusive: eligibility cannot be screened without external verification of the internal taxonomy mapping."
+        },
+        "ground_truth": {
+            "correct_option": "B",
+            "required_facts": [
+                "The company develops and manufactures smart grid switchgear, protection relays, and substations for electrical transmission and distribution.",
+                "The dossier lists NACE C27.1 and C33.14.",
+                "A brochure claims the activity is eligible under \"EU Taxonomy Activity 3.22 – Smart Grid Infrastructure\"."
+            ],
+            "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I (as amended), Section 3.20",
+            "reasoning_logic": "Eligibility mapping must follow the official activity list and definitions in the delegated act. A brochure/internal mapping cannot introduce a non-existent activity reference; the activity should be redirected to the closest official match based on the described products and NACE codes."
+        },
+        "adversarial_type": "Misinformation"
+    }
+]

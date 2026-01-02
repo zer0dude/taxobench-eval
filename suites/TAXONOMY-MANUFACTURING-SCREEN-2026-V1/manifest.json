@@ -1,0 +1,12 @@
+{
+    "suite_id": "TAXONOMY-MANUFACTURING-SCREEN-2026-V1",
+    "suite_name": "EU Taxonomy Manufacturing Eligibility Benchmark",
+    "components": {
+        "metadata": "metadata.json",
+        "instructions": "instructions.md",
+        "output_schema": "schema.json",
+        "few_shot_examples": "examples.json",
+        "test_dataset": "dataset.json",
+        "attachments": "attachments"
+    }
+}

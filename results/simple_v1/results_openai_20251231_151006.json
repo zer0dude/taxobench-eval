@@ -1,0 +1,157 @@
+[
+  {
+    "id": "MAN-EASY-3.7-001",
+    "correct_option": true,
+    "facts_score": 0.0,
+    "source_score": 0.05,
+    "agent_response": {
+      "selected_option": "A",
+      "required_facts": [
+        "Plant manufactures cement clinker",
+        "NACE C23.51"
+      ],
+      "legal_source": "Climate Delegated Act, Annex I, Section 3.7",
+      "reasoning_logic": "Cement clinker manufacturing is explicitly listed as an eligible activity under Section 3.7 of the Climate Delegated Act. The internal certificate claiming carbon neutrality does not affect the eligibility assessment, which is based on the NACE code and the activity's inclusion in the Delegated Act. Options B, C, and D are incorrect because they either misinterpret the eligibility criteria or rely on factors not relevant to the initial eligibility determination."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.11-002",
+    "correct_option": true,
+    "facts_score": 0.0,
+    "source_score": 0.05,
+    "agent_response": {
+      "selected_option": "B",
+      "required_facts": [
+        "Facility produces Carbon Black",
+        "NACE C20.13"
+      ],
+      "legal_source": "Climate Delegated Act, Annex I, Section 3.11",
+      "reasoning_logic": "The production of Carbon Black is directly associated with NACE code C20.13, which corresponds to Section 3.11 in the Climate Delegated Act. This section specifically addresses the manufacture of carbon black. The sustainability report's mention of 'Low-Carbon Chemicals Division' does not change the technical classification of the activity. Options A, C, and D refer to different manufacturing activities that do not match the NACE code or the product in question."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.9-003",
+    "correct_option": true,
+    "facts_score": 0.0,
+    "source_score": 0.05,
+    "agent_response": {
+      "selected_option": "B",
+      "required_facts": [
+        "Core operation as steelmaking",
+        "NACE C24.10",
+        "Product output: hot-rolled steel"
+      ],
+      "legal_source": "Climate Delegated Act, Annex I, Section 3.9",
+      "reasoning_logic": "The dossier specifies the core operation as steelmaking with NACE C24.10, which aligns with the manufacture of iron and steel. Therefore, Section 3.9 is the appropriate reference for eligibility assessment. The claim of being a battery manufacturer is not supported by the technical facts provided, making option A incorrect. Option C is irrelevant as the activity does not pertain to renewable energy technologies. Option D is incorrect because the eligibility assessment should be based on factual operations, not claims."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.1-004",
+    "correct_option": true,
+    "facts_score": 0.0,
+    "source_score": 0.05,
+    "agent_response": {
+      "selected_option": "C",
+      "required_facts": [
+        "NACE C25 (manufacture of fabricated metal products)",
+        "Produces components for wind turbines",
+        "Produces electrolyser frames for hydrogen"
+      ],
+      "legal_source": "Climate Delegated Act, Annex I, Sections 3.1 and 3.2",
+      "reasoning_logic": "The activity involves NACE C25, which can relate to both renewable energy technologies and hydrogen equipment manufacturing. However, without specific product details, it is not possible to uniquely map the activity to a single EU Taxonomy Manufacturing activity reference. Both Sections 3.1 and 3.2 could potentially apply, but the lack of detailed product information makes the mapping inconclusive."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.8-005",
+    "correct_option": true,
+    "facts_score": 0.0,
+    "source_score": 0.05,
+    "agent_response": {
+      "selected_option": "A",
+      "required_facts": [
+        "Facility lists NACE C24.42",
+        "Produces primary aluminium"
+      ],
+      "legal_source": "Climate Delegated Act, Annex I, Section 3.8",
+      "reasoning_logic": "The facility's activity of producing primary aluminium with NACE code C24.42 aligns with Section 3.8, which covers the manufacture of aluminium. The mention of a 'Low-carbon steel transformation program' in the annual report headline does not change the primary activity of the facility, which is aluminium production. Therefore, option A is correct. Options B, C, and D are incorrect as they pertain to different manufacturing activities not related to aluminium production."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.18-006",
+    "correct_option": false,
+    "facts_score": 0.0,
+    "source_score": 0.0,
+    "agent_response": {
+      "selected_option": "B",
+      "required_facts": [
+        "Manufacturer produces electric drivetrain components and power electronics for zero-emission vehicles",
+        "NACE C29.3"
+      ],
+      "legal_source": "Climate Delegated Act, Annex I, Section 3.3",
+      "reasoning_logic": "The production of electric drivetrain components and power electronics for zero-emission vehicles aligns with the manufacture of low carbon technologies for transport, which is covered under Section 3.3. The NACE code C29.3 supports this classification. Option A is incorrect as it is more general and does not specifically address low carbon technologies. Option C is incorrect as it pertains to renewable energy technologies, not vehicle components. Option D is incorrect because the eligibility is based on the activity, not marketing claims."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.21-007",
+    "correct_option": true,
+    "facts_score": 0.0,
+    "source_score": 0.05,
+    "agent_response": {
+      "selected_option": "B",
+      "required_facts": [
+        "Company manufactures aircraft parts",
+        "Performs overhaul and retrofitting",
+        "NACE C30.3"
+      ],
+      "legal_source": "Climate Delegated Act, Annex I, Section 3.21",
+      "reasoning_logic": "The activity of manufacturing aircraft parts and performing overhaul and retrofitting aligns with NACE C30.3, which corresponds to the manufacturing of aircraft. Section 3.21 covers this activity. The mention of rail decarbonisation in the press release is irrelevant to the primary activity coded under NACE C30.3, and without specific rail-related revenue or activities, it does not affect the eligibility assessment."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.4-008",
+    "correct_option": true,
+    "facts_score": 0.0,
+    "source_score": 0.05,
+    "agent_response": {
+      "selected_option": "A",
+      "required_facts": [
+        "Company produces lithium-ion battery cells",
+        "NACE C27.2"
+      ],
+      "legal_source": "Climate Delegated Act, Annex I, Section 3.4",
+      "reasoning_logic": "The production of lithium-ion battery cells falls under the manufacture of batteries, which is covered by Section 3.4. The NACE code C27.2 supports this classification. The mention of a recycling line does not affect the eligibility assessment for the battery cell production line itself. Options B and C are incorrect as they do not specifically pertain to battery manufacturing, and D is incorrect because the recycling aspect is separate from the primary manufacturing activity in question."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.10-009",
+    "correct_option": true,
+    "facts_score": 0.0,
+    "source_score": 0.05,
+    "agent_response": {
+      "selected_option": "B",
+      "required_facts": [
+        "Plant produces hydrogen",
+        "NACE C20.11",
+        "Output: hydrogen gas"
+      ],
+      "legal_source": "Climate Delegated Act, Annex I, Section 3.10",
+      "reasoning_logic": "The technical dossier clearly states that the output is hydrogen gas, which aligns with the activity 'Manufacture of hydrogen' under Section 3.10. The CEO's statement about manufacturing equipment does not change the fact that the plant produces hydrogen, as per the technical dossier. Therefore, option B is correct. Option A is incorrect because it pertains to manufacturing equipment, not the hydrogen itself. Option C is incorrect as it relates to renewable energy technologies, not hydrogen production. Option D is incorrect because the technical dossier confirms hydrogen production, making the activity eligible under Section 3.10."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.20-010",
+    "correct_option": true,
+    "facts_score": 0.0,
+    "source_score": 0.05,
+    "agent_response": {
+      "selected_option": "B",
+      "required_facts": [
+        "Company develops and manufactures smart grid switchgear and substations",
+        "NACE C27.1",
+        "NACE C33.14"
+      ],
+      "legal_source": "Climate Delegated Act, Annex I, Section 3.20",
+      "reasoning_logic": "The activity involves the manufacture of electrical equipment for transmission and distribution, which aligns with Section 3.20. NACE codes C27.1 and C33.14 support this classification. 'Green grid certified' is a marketing term and does not affect the technical eligibility assessment."
+    }
+  }
+]

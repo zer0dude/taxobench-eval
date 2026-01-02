@@ -1,0 +1,197 @@
+[
+  {
+    "id": "MAN-EASY-3.7-001",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'A' matches the ground truth.",
+    "facts_score": 0.8412796516888117,
+    "facts_reason": "The actual output matches the expected output in meaning. Both outputs convey that a plant manufactures cement clinker and the activity is coded as NACE C23.51, fulfilling the evaluation criteria for a perfect match.",
+    "source_score": 1.0,
+    "source_reason": "The actual output matches the expected output exactly, indicating a correct citation that aligns perfectly with the expected source.",
+    "agent_response": {
+      "selected_option": "A",
+      "required_facts": [
+        "Plant manufactures cement clinker",
+        "NACE C23.51"
+      ],
+      "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.7",
+      "reasoning_logic": "Cement clinker manufacturing is explicitly listed under Section 3.7 of the Climate Delegated Act, making it eligible for assessment. The internal certificate claiming carbon neutrality is irrelevant to the eligibility determination, which is based on the NACE code and the activity's inclusion in the Delegated Act. Options B, C, and D are incorrect because they either misinterpret the eligibility criteria or rely on factors not required for eligibility assessment."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.11-002",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'B' matches the ground truth.",
+    "facts_score": 0.98983382369969,
+    "facts_reason": "All facts in the actual output match the expected output in meaning. 'Facility produces Carbon Black' aligns with 'A facility produces carbon black.' and 'NACE C20.13' corresponds to 'The activity is coded as NACE C20.13.'",
+    "source_score": 1.0,
+    "source_reason": "The actual output matches the expected output exactly, with the citation 'Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.11' being correctly cited and aligned with the expected source.",
+    "agent_response": {
+      "selected_option": "B",
+      "required_facts": [
+        "Facility produces Carbon Black",
+        "NACE C20.13"
+      ],
+      "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.11",
+      "reasoning_logic": "The production of carbon black is specifically covered under Section 3.11 of the Climate Delegated Act, which matches the NACE code C20.13. The mention of 'Low-Carbon Chemicals Division' in the sustainability report does not affect the technical classification of the activity. Options A, C, and D refer to different manufacturing activities that do not match the NACE code or the product in question."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.9-003",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'B' matches the ground truth.",
+    "facts_score": 0.9885113149195413,
+    "facts_reason": "All facts in the actual output match the expected output in meaning. The core operation, NACE code, and product output are correctly identified and aligned with the expected facts.",
+    "source_score": 0.9999999999999998,
+    "source_reason": "The actual output matches the expected output exactly, indicating a correct citation that aligns perfectly with the expected source.",
+    "agent_response": {
+      "selected_option": "B",
+      "required_facts": [
+        "Core operation is steelmaking",
+        "NACE C24.10",
+        "Product output: hot-rolled steel"
+      ],
+      "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.9",
+      "reasoning_logic": "The dossier specifies the core operation as steelmaking with NACE C24.10, which aligns with the manufacture of iron and steel. Therefore, Section 3.9 is the appropriate reference for eligibility assessment. The claim of being a battery manufacturer is not supported by the technical facts provided, making option A incorrect. Option C is irrelevant as the activity does not pertain to renewable energy technologies. Option D is incorrect because the eligibility assessment should be based on the actual operations and NACE codes, not marketing claims."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.1-004",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'C' matches the ground truth.",
+    "facts_score": 0.4031659233741774,
+    "facts_reason": "All key facts are present in the actual output: NACE C25, production of wind turbine components, and electrolyser frames for hydrogen. However, the actual output lacks the context provided in the expected output, such as the mention of documents and the absence of a product list.",
+    "source_score": 0.9999999999999998,
+    "source_reason": "The actual output matches the expected output exactly, with the citation 'Climate Delegated Act (EU) 2021/2139, Annex I, Sections 3.1 and 3.2' being correct and complete. This demonstrates strong alignment with the evaluation steps, warranting a perfect score.",
+    "agent_response": {
+      "selected_option": "C",
+      "required_facts": [
+        "NACE C25 (manufacture of fabricated metal products)",
+        "Produces components for wind turbines",
+        "Produces electrolyser frames for hydrogen"
+      ],
+      "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Sections 3.1 and 3.2",
+      "reasoning_logic": "NACE C25 covers a broad range of fabricated metal products, which can be associated with multiple EU Taxonomy activities. The production of components for wind turbines could fall under Section 3.1, while electrolyser frames for hydrogen could fall under Section 3.2. Without specific product details, it is not possible to uniquely map the activity to a single EU Taxonomy Manufacturing activity reference."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.8-005",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'A' matches the ground truth.",
+    "facts_score": 0.9658851775608948,
+    "facts_reason": "Both the actual and expected outputs convey the same facts: the facility produces primary aluminium and is coded as NACE C24.42. The meaning is preserved despite differences in phrasing.",
+    "source_score": 1.0,
+    "source_reason": "The actual output matches the expected output exactly, indicating a correct citation that aligns perfectly with the expected source.",
+    "agent_response": {
+      "selected_option": "A",
+      "required_facts": [
+        "Facility lists NACE C24.42",
+        "Produces primary aluminium"
+      ],
+      "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.8",
+      "reasoning_logic": "The production of primary aluminium is covered under Section 3.8, which corresponds to NACE C24.42. The mention of a 'Low-carbon steel transformation program' in the annual report headline does not change the primary activity of the facility, which is aluminium production. Therefore, option A is correct. Options B, C, and D are incorrect as they pertain to different manufacturing activities not related to aluminium production."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.18-006",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'A' matches the ground truth.",
+    "facts_score": 0.021043864107999532,
+    "facts_reason": "The actual output is missing key facts from the expected output. It does not specify that the components are for zero-emission vehicles and lacks the detail that the dossier lists NACE C29.3. Therefore, it does not meet the criteria for any facts being present.",
+    "source_score": 0.5379290913164053,
+    "source_reason": "The actual output citation is mostly correct but lacks the 'as amended' detail present in the expected output. This omission makes the citation incomplete, aligning with the criteria for a score of 5.",
+    "agent_response": {
+      "selected_option": "A",
+      "required_facts": [
+        "Manufacturer produces drivetrain components and power electronics for vehicles",
+        "NACE C29.3"
+      ],
+      "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.18",
+      "reasoning_logic": "The production of drivetrain components and power electronics for vehicles falls under the manufacture of automotive and mobility components, which is covered by Section 3.18. The NACE code C29.3 aligns with this activity. The claim 'EU Taxonomy certified' is irrelevant to the technical eligibility assessment, which is based on the activity description and NACE code. Options B and C are incorrect as they pertain to broader categories of low carbon technologies and renewable energy technologies, which do not specifically match the described activity. Option D is incorrect because the eligibility is determined by the activity and NACE code, not marketing claims."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.21-007",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'B' matches the ground truth.",
+    "facts_score": 0.5253454296940527,
+    "facts_reason": "All expected facts are present in the actual output, but they are split into separate items and lack the specific phrasing of the expected output. The meaning is conveyed, but the structure differs.",
+    "source_score": 0.516542987942995,
+    "source_reason": "The citation in the actual output matches the expected source in terms of document number and section, but it is incomplete as it omits the 'as amended' detail present in the expected output.",
+    "agent_response": {
+      "selected_option": "B",
+      "required_facts": [
+        "Company manufactures aircraft parts",
+        "Performs overhaul and retrofitting",
+        "NACE C30.3"
+      ],
+      "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.21",
+      "reasoning_logic": "The activity of manufacturing aircraft parts and performing overhaul and retrofitting aligns with NACE C30.3, which corresponds to the manufacturing of aircraft. Section 3.21 covers this activity. The mention of rail decarbonisation in the press release is not supported by any technical or revenue data, making it irrelevant for the eligibility assessment. Options A and C do not match the NACE code or the described activities, and option D is incorrect because the primary activity is clearly related to aircraft manufacturing, not rail."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.4-008",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'A' matches the ground truth.",
+    "facts_score": 0.0,
+    "facts_reason": "The actual output is missing key facts from the expected output, specifically the mention of the dossier listing NACE C27.2 and the question concerning the battery cell production line.",
+    "source_score": 1.0,
+    "source_reason": "The actual output matches the expected output exactly, indicating a correct citation that aligns perfectly with the expected source.",
+    "agent_response": {
+      "selected_option": "A",
+      "required_facts": [
+        "Company produces lithium-ion battery cells",
+        "NACE C27.2"
+      ],
+      "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.4",
+      "reasoning_logic": "The production of lithium-ion battery cells falls under the manufacture of batteries, which is covered by Section 3.4. The NACE code C27.2 supports this classification. The mention of a recycling line does not affect the eligibility assessment for the battery cell production line. Options B and C are incorrect as they do not specifically pertain to battery manufacturing, and D is incorrect because the recycling aspect is separate from the primary manufacturing activity in question."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.10-009",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'B' matches the ground truth.",
+    "facts_score": 0.43835881748587013,
+    "facts_reason": "All expected facts are present: the output being hydrogen gas and the NACE code C20.11. However, the actual output includes an extra fact about the plant producing hydrogen, which is not in the expected output.",
+    "source_score": 0.9999999999999998,
+    "source_reason": "The actual output matches the expected output exactly, with the citation 'Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.10' being correct and complete. This demonstrates strong alignment with the evaluation steps, warranting a perfect score.",
+    "agent_response": {
+      "selected_option": "B",
+      "required_facts": [
+        "Plant produces hydrogen",
+        "Output: hydrogen gas",
+        "NACE C20.11"
+      ],
+      "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.10",
+      "reasoning_logic": "The technical dossier clearly states that the output is hydrogen gas, which aligns with the activity 'Manufacture of hydrogen' under Section 3.10. The CEO's statement about manufacturing equipment does not change the fact that the plant produces hydrogen, as per the technical dossier. Therefore, option B is correct. Option A is incorrect because it pertains to equipment manufacture, not hydrogen production. Option C is incorrect as it relates to renewable energy technologies, not hydrogen production. Option D is incorrect because the technical dossier confirms hydrogen production, regardless of the CEO's statement."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.22-010",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'B' matches the ground truth.",
+    "facts_score": 0.5761982512880507,
+    "facts_reason": "All key facts are present in the actual output, but there are some differences in phrasing and additional details in the expected output. The actual output lacks the context of 'for electrical transmission and distribution' and the specific mention of 'Smart Grid Infrastructure' in the EU Taxonomy Activity.",
+    "source_score": 0.5267016642407967,
+    "source_reason": "The citation is mostly correct but missing the phrase '(as amended)' which is present in the expected output. This omission makes the citation incomplete, aligning with the criteria for an incomplete or messy but correct citation.",
+    "agent_response": {
+      "selected_option": "B",
+      "required_facts": [
+        "Company develops and manufactures smart grid switchgear, protection relays, and substations",
+        "NACE C27.1 and C33.14",
+        "Brochure claims eligibility under EU Taxonomy Activity 3.22"
+      ],
+      "legal_source": "Climate Delegated Act (EU) 2021/2139, Annex I, Section 3.20",
+      "reasoning_logic": "Activity 3.22 is not listed as a Manufacturing activity in the Climate Delegated Act. The correct reference for manufacturing electrical equipment for transmission and distribution, including smart grid components, is Section 3.20. The internal taxonomy mapping and brochure claim do not align with the official EU Taxonomy structure for Manufacturing activities."
+    }
+  }
+]

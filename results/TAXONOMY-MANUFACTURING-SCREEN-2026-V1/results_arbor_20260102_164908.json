@@ -1,0 +1,516 @@
+[
+  {
+    "id": "MAN-EASY-3.7-001",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'A' matches the ground truth.",
+    "facts_score": 0.3047656250442482,
+    "facts_reason": "The actual output correctly identifies the core fact about the NACE code C23.51 linked to cement, aligning with the expected output. However, it misses the specific details about the plant manufacturing cement clinker and the mention of the brochure stating 'Our cement is carbon-neutral (internal certificate).' This omission results in a significant loss of recall, impacting the score.",
+    "source_score": 0.6043523682217902,
+    "source_reason": "The core words in the quote anchor are consistent with the expected output, avoiding a hallucination penalty. The source is correctly identified, matching the expected source. However, the quote anchor is incomplete compared to the expected output, leading to a recall issue. The locator and version are correctly validated, with no schema issues present.",
+    "agent_response": {
+      "selected_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "Factory identifies as cement manufacturer... NACE code C23.51 linked to cement"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex I | Section 3.7",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Manufacture of cement clinker... associated with NACE code C23.51"
+        }
+      ],
+      "reasoning_logic": "Mock reasoning: The activity clearly falls under manufacture of cement as per the NACE code provided in the context."
+    },
+    "ground_truth": {
+      "correct_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "A plant manufactures cement clinker (NACE C23.51). The brochure states: \"Our cement is carbon-neutral (internal certificate)\" but provides no other Taxonomy references."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "quote_anchor": "3.7.    Manufacture of cement Description of the activity Manufacture of cement clinker. The economic activities in this category could be associated with the NACE code C23.51 in accordance with the statistical classification",
+          "locator": "Annex I | Section 3.7",
+          "version": "OJ L 442, 09.12.2021"
+        }
+      ],
+      "reasoning_logic": "Eligibility is determined by whether the described economic activity is listed in Annex I (Manufacturing). Marketing claims and internal certificates do not affect whether the activity is listed."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.11-002",
+    "correct_option": false,
+    "mcq_score": 0.0,
+    "mcq_reason": "The selected option 'A' does not match the ground truth 'B'.",
+    "facts_score": 0.0,
+    "facts_reason": "The core words in the actual output quote anchor ('Factory identifies as cement manufacturer... NACE code C23.51 linked to cement') differ significantly from the expected output ('A facility produces Carbon Black (NACE C20.13). The sustainability report headline says: \"Low-Carbon Chemicals Division\"'). This discrepancy in core facts results in a score of 0 due to failure in Step 2 (Hallucination).",
+    "source_score": 0.0,
+    "source_reason": "The core words of the actual quote differ significantly from the expected quote, indicating a hallucination error. The actual quote refers to 'Manufacture of cement clinker' with NACE code C23.51, while the expected quote is about 'Manufacture of carbon black' with NACE code C20.13. This discrepancy results in a score of 0 as per the evaluation steps.",
+    "agent_response": {
+      "selected_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "Factory identifies as cement manufacturer... NACE code C23.51 linked to cement"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex I | Section 3.7",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Manufacture of cement clinker... associated with NACE code C23.51"
+        }
+      ],
+      "reasoning_logic": "Mock reasoning: The activity clearly falls under manufacture of cement as per the NACE code provided in the context."
+    },
+    "ground_truth": {
+      "correct_option": "B",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "A facility produces Carbon Black (NACE C20.13). The sustainability report headline says: \"Low-Carbon Chemicals Division\"."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "quote_anchor": "3.11.    Manufacture of carbon black Description of the activity Manufacture of carbon black. The economic activities in this category could be associated with NACE code C20.13 in accordance with the statistical classification",
+          "locator": "Annex I | Section 3.11",
+          "version": "OJ L 442, 09.12.2021"
+        }
+      ],
+      "reasoning_logic": "Eligibility mapping follows the actual described activity (carbon black production) and its associated NACE code, not a generic sustainability headline."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.9-003",
+    "correct_option": false,
+    "mcq_score": 0.0,
+    "mcq_reason": "The selected option 'A' does not match the ground truth 'B'.",
+    "facts_score": 0.0,
+    "facts_reason": "The core words of the actual quote differ significantly from the expected output, indicating a hallucination. The actual output mentions a cement manufacturer with NACE code C23.51, while the expected output refers to a battery manufacturer with a core operation in steelmaking and NACE C24.10. This discrepancy results in a score of 0 as per the evaluation steps.",
+    "source_score": 0.0,
+    "source_reason": "The core words of the actual quote differ significantly from the expected quote, indicating a hallucination. The actual quote refers to 'Manufacture of cement clinker' while the expected quote is about 'Manufacture of iron and steel'. This discrepancy results in a score of 0 as per Step 2. Additionally, the locator and version match, but the expected source content is missing, which would have led to a significant deduction in Step 3 if not already scored 0.",
+    "agent_response": {
+      "selected_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "Factory identifies as cement manufacturer... NACE code C23.51 linked to cement"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex I | Section 3.7",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Manufacture of cement clinker... associated with NACE code C23.51"
+        }
+      ],
+      "reasoning_logic": "Mock reasoning: The activity clearly falls under manufacture of cement as per the NACE code provided in the context."
+    },
+    "ground_truth": {
+      "correct_option": "B",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "A company website claims: \"We are a battery manufacturer.\" However, the dossier lists the core operation as steelmaking with NACE C24.10 and product output: hot-rolled steel."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "quote_anchor": "3.9.    Manufacture of iron and steel Description of the activity Manufacture of iron and steel. The economic activities in this category could be associated with NACE codes C24.10, C24.20 and C24.30 in accordance",
+          "locator": "Annex I | Section 3.9",
+          "version": "OJ L 442, 09.12.2021"
+        }
+      ],
+      "reasoning_logic": "Eligibility screening should follow the primary evidenced activity in the technical dossier (steelmaking, NACE C24.10), not marketing/website positioning."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.1-004",
+    "correct_option": false,
+    "mcq_score": 0.0,
+    "mcq_reason": "The selected option 'A' does not match the ground truth 'C'.",
+    "facts_score": 0.0,
+    "facts_reason": "The core words of the actual quote differ significantly from the expected output, indicating a hallucination. The actual output mentions a cement manufacturer with NACE code C23.51, while the expected output refers to a plant with NACE C25 related to metal products and mentions components for wind turbines and electrolyser frames. This discrepancy results in a score of 0 as per the evaluation steps.",
+    "source_score": 0.02182920144095815,
+    "source_reason": "The core words of the actual quote differ significantly from the expected quotes, indicating a hallucination error. The actual output mentions 'Manufacture of cement clinker' associated with NACE code C23.51, while the expected output includes 'Manufacture of renewable energy technologies' and 'Manufacture of equipment for the production and use of hydrogen' with different NACE codes. This discrepancy results in a score of 0 as per Step 2. Additionally, the expected sources are missing, leading to a further deduction in Step 3.",
+    "agent_response": {
+      "selected_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "Factory identifies as cement manufacturer... NACE code C23.51 linked to cement"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex I | Section 3.7",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Manufacture of cement clinker... associated with NACE code C23.51"
+        }
+      ],
+      "reasoning_logic": "Mock reasoning: The activity clearly falls under manufacture of cement as per the NACE code provided in the context."
+    },
+    "ground_truth": {
+      "correct_option": "C",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "A plant reports NACE C25 (manufacture of fabricated metal products). The sales deck says it produces \"components for wind turbines\" while an internal memo says \"electrolyser frames for hydrogen\". No product list is provided."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "quote_anchor": "3.1.    Manufacture of renewable energy technologies Description of the activity Manufacture of renewable energy technologies. The economic activities in this category could be associated with NACE codes C25, C27, and C28",
+          "locator": "Annex I | Section 3.1",
+          "version": "OJ L 442, 09.12.2021"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "quote_anchor": "3.2.    Manufacture of equipment for the production and use of hydrogen Description of the activity Manufacture of equipment for the production and use of hydrogen. The economic activities in this category could be associated with NACE codes C25 and C28",
+          "locator": "Annex I | Section 3.2",
+          "version": "OJ L 442, 09.12.2021"
+        }
+      ],
+      "reasoning_logic": "With only NACE C25 and conflicting product descriptions (wind components vs electrolyser frames), the snippet supports multiple plausible EU Taxonomy Manufacturing mappings (Sections 3.1 and 3.2). Without a definitive product list, a unique mapping is not justified."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.8-005",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'A' matches the ground truth.",
+    "facts_score": 0.0,
+    "facts_reason": "The core words in the actual output quote do not match the expected output quote, indicating a hallucination error. The expected quote mentions 'NACE C24.42', 'primary aluminium', and 'Low-carbon steel transformation program', none of which are present in the actual output. This results in a complete misalignment with the expected facts, leading to a score of zero.",
+    "source_score": 0.01809275410407373,
+    "source_reason": "The core words of the actual quote differ significantly from the expected quote, indicating a hallucination error. The actual output references 'Manufacture of cement clinker' with NACE code C23.51, while the expected output is about 'Manufacture of aluminium' with NACE codes C24.42 and C24.43. This discrepancy results in a score of 0 as per Step 2. Additionally, the locator and version match, but the critical error in the quote prevents any points from being awarded.",
+    "agent_response": {
+      "selected_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "Factory identifies as cement manufacturer... NACE code C23.51 linked to cement"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex I | Section 3.7",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Manufacture of cement clinker... associated with NACE code C23.51"
+        }
+      ],
+      "reasoning_logic": "Mock reasoning: The activity clearly falls under manufacture of cement as per the NACE code provided in the context."
+    },
+    "ground_truth": {
+      "correct_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "A facility lists NACE C24.42 and produces primary aluminium. The annual report headline says: \"Low-carbon steel transformation program\"."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "quote_anchor": "3.8.    Manufacture of aluminium Description of the activity Manufacture of primary aluminium. The economic activities in this category could be associated with NACE codes C24.42 and C24.43 in accordance",
+          "locator": "Annex I | Section 3.8",
+          "version": "OJ L 442, 09.12.2021"
+        }
+      ],
+      "reasoning_logic": "Eligibility mapping should follow the described production activity and its NACE code association (primary aluminium, C24.42), not an unrelated annual report headline."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.18-006",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'A' matches the ground truth.",
+    "facts_score": 0.3728667801585564,
+    "facts_reason": "The actual output contains a core fact about the factory identifying as a cement manufacturer, which aligns with the expected internal fact type. However, the expected output contains two internal facts with unspecified details, while the actual output provides specific context and a quote anchor. This results in a partial recall of expected facts, leading to a deduction in score.",
+    "source_score": 0.018842150054065792,
+    "source_reason": "The core words of the actual quote differ from the expected output, which requires 'None' for 'quote_anchor'. This discrepancy results in a score of 0 as per Step 2. Additionally, the expected sources are missing, leading to a further deduction of 5 points according to Step 3. The locator and version in the actual output do not match the expected 'N/A' and 'OJ 2023-11-21', respectively, indicating further misalignment.",
+    "agent_response": {
+      "selected_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "Factory identifies as cement manufacturer... NACE code C23.51 linked to cement"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex I | Section 3.7",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Manufacture of cement clinker... associated with NACE code C23.51"
+        }
+      ],
+      "reasoning_logic": "Mock reasoning: The activity clearly falls under manufacture of cement as per the NACE code provided in the context."
+    },
+    "ground_truth": {
+      "correct_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": null,
+          "quote_anchor": null
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": null,
+          "quote_anchor": null
+        },
+        {
+          "evidence_type": "external_source",
+          "source": null,
+          "quote_anchor": null,
+          "locator": "N/A",
+          "version": "OJ 2023-11-21"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": null,
+          "quote_anchor": null,
+          "locator": "N/A",
+          "version": "OJ 2023-11-21"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": null,
+          "quote_anchor": null,
+          "locator": "N/A",
+          "version": "OJ 2023-11-21"
+        }
+      ],
+      "reasoning_logic": "Eligibility mapping follows the evidenced underlying activity and its NACE coding. Section 3.18 explicitly covers automotive/mobility components and explicitly associates the activity with NACE C29.3; it also states these activities are excluded from Sections 3.3 and 3.6, so 3.18 is the best-fit eligibility category."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.21-007",
+    "correct_option": false,
+    "mcq_score": 0.0,
+    "mcq_reason": "The selected option 'A' does not match the ground truth 'B'.",
+    "facts_score": 0.0,
+    "facts_reason": "The core words in the actual output quote differ significantly from the expected output, indicating a complete mismatch in context and content. The actual output discusses a cement manufacturer, while the expected output is about an aircraft parts manufacturer with additional details on rail decarbonisation. This discrepancy results in a score of zero due to failure in the hallucination check.",
+    "source_score": 0.0,
+    "source_reason": "The core words of the actual quote differ significantly from the expected output, indicating a hallucination error. The actual output references 'Manufacture of cement clinker' while the expected output involves 'Manufacturing of aircraft'. Additionally, the expected sources are missing, leading to a significant recall issue. The locator and version also do not match the expected output, further contributing to the misalignment.",
+    "agent_response": {
+      "selected_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "Factory identifies as cement manufacturer... NACE code C23.51 linked to cement"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex I | Section 3.7",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Manufacture of cement clinker... associated with NACE code C23.51"
+        }
+      ],
+      "reasoning_logic": "Mock reasoning: The activity clearly falls under manufacture of cement as per the NACE code provided in the context."
+    },
+    "ground_truth": {
+      "correct_option": "B",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "A company manufactures aircraft parts and performs overhaul and retrofitting. The dossier lists NACE C30.3. The press release says: \"We also support rail decarbonisation\" but provides no rail revenue breakdown."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2023/2485/oj",
+          "quote_anchor": "3.21.   Manufacturing of aircraft Description of the activity Manufacture, repair, maintenance, overhaul, retrofitting, design, repurposing and upgrade of aircraft and aircraft parts and equipment",
+          "locator": "Annex I | Section 3.21",
+          "version": "OJ L, 21.11.2023"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2023/2485/oj",
+          "quote_anchor": "could be associated with a NACE code, in particular C30.3 and C33.16, in accordance with the statistical classification of economic activities established by Regulation (EC) No 1893/2006",
+          "locator": "Annex I | Section 3.21",
+          "version": "OJ L, 21.11.2023"
+        }
+      ],
+      "reasoning_logic": "Eligibility screening should follow the evidenced primary activity in the dossier (aircraft parts, overhaul/retrofitting; NACE C30.3), not an unquantified mention of another sector in a press release."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.4-008",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'A' matches the ground truth.",
+    "facts_score": 0.0,
+    "facts_reason": "The core words of the actual quote, 'Factory identifies as cement manufacturer... NACE code C23.51 linked to cement', differ significantly from the expected quote, 'A company produces lithium-ion battery cells... NACE C27.2... battery waste sorting'. This discrepancy in core content results in a score of 0 due to failure in Step 2 (Hallucination).",
+    "source_score": 0.0,
+    "source_reason": "The core words of the actual quote 'Manufacture of cement clinker... associated with NACE code C23.51' differ significantly from the expected quotes related to 'Manufacture of batteries' and associated NACE codes. This discrepancy in core content results in a score of 0 due to hallucination. Additionally, the expected sources are not found in the actual output, leading to a further deduction. The locator and version match, but these are minor issues and do not affect the score given the major discrepancies in content.",
+    "agent_response": {
+      "selected_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "Factory identifies as cement manufacturer... NACE code C23.51 linked to cement"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex I | Section 3.7",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Manufacture of cement clinker... associated with NACE code C23.51"
+        }
+      ],
+      "reasoning_logic": "Mock reasoning: The activity clearly falls under manufacture of cement as per the NACE code provided in the context."
+    },
+    "ground_truth": {
+      "correct_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "A company produces lithium-ion battery cells. The dossier lists NACE C27.2 and includes a separate recycling line described as \"battery waste sorting\". A brochure claims: \"100% aligned\" without references."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "quote_anchor": "3.4.    Manufacture of batteries Description of the activity Manufacture of rechargeable batteries, battery packs and accumulators for transport, stationary and off-grid energy storage and other industrial applications and manufacture of respective components (battery active materials, battery cells, casings and electronic components)",
+          "locator": "Annex I | Section 3.4",
+          "version": "OJ L 442, 09.12.2021"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "quote_anchor": "The economic activities in this category could be associated with NACE codes C27.20, C27.2 and E38.3.2 in accordance with the statistical classification of economic activities established by Regulation (EC) No 1893/2006",
+          "locator": "Annex I | Section 3.4",
+          "version": "OJ L 442, 09.12.2021"
+        }
+      ],
+      "reasoning_logic": "The question concerns the battery cell manufacturing line; that maps to Section 3.4. Mention of a separate recycling/sorting line and generic “aligned” marketing does not change the eligibility category for the manufacturing activity."
+    }
+  },
+  {
+    "id": "MAN-EASY-3.10-009",
+    "correct_option": false,
+    "mcq_score": 0.0,
+    "mcq_reason": "The selected option 'A' does not match the ground truth 'B'.",
+    "facts_score": 0.0,
+    "facts_reason": "The core words of the actual quote differ significantly from the expected output, indicating a hallucination. The actual output mentions a cement manufacturer with NACE code C23.51, while the expected output refers to a hydrogen plant with NACE C20.11. This discrepancy results in a score of 0 as per the evaluation steps.",
+    "source_score": 0.0,
+    "source_reason": "The core words of the actual quote differ significantly from the expected quote, indicating a hallucination error. The actual output references 'Manufacture of cement clinker' while the expected output is about 'Manufacture of hydrogen'. This discrepancy results in a score of 0 as per Step 2. Additionally, the locator and version match, but the source content is incorrect, which is critical.",
+    "agent_response": {
+      "selected_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "Factory identifies as cement manufacturer... NACE code C23.51 linked to cement"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex I | Section 3.7",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Manufacture of cement clinker... associated with NACE code C23.51"
+        }
+      ],
+      "reasoning_logic": "Mock reasoning: The activity clearly falls under manufacture of cement as per the NACE code provided in the context."
+    },
+    "ground_truth": {
+      "correct_option": "B",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "A plant produces hydrogen (NACE C20.11). The CEO states: \"We only manufacture hydrogen equipment, not hydrogen itself.\" The technical dossier states: \"Output: hydrogen gas\"."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "quote_anchor": "3.10.    Manufacture of hydrogen Description of the activity Manufacture of hydrogen and hydrogen-based synthetic fuels. The economic activities in this category could be associated with NACE code C20.11 in accordance with the statistical classification",
+          "locator": "Annex I | Section 3.10",
+          "version": "OJ L 442, 09.12.2021"
+        }
+      ],
+      "reasoning_logic": "Eligibility mapping should follow the technical dossier’s described output (hydrogen gas) and the corresponding Annex I activity (Section 3.10), not a contradictory executive statement."
+    }
+  },
+  {
+    "id": "MAN-EASY-FAKE-3.22-010",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'A' matches the ground truth.",
+    "facts_score": 0.0,
+    "facts_reason": "The core words in the actual output quote anchor differ significantly from the expected output, indicating a hallucination error. The actual output mentions a cement manufacturer with NACE code C23.51, while the expected output refers to a company involved in smart grid switchgear and substations with NACE codes C27.1 and C33.14. This discrepancy results in a score of 0 as per the evaluation steps.",
+    "source_score": 0.0029312234037225486,
+    "source_reason": "The core words of the actual quote differ significantly from the expected output, indicating a hallucination error. The actual output references 'Manufacture of cement clinker' associated with NACE code C23.51, while the expected output involves 'Manufacture of automotive and mobility components' and other activities. Additionally, the source and version in the actual output do not match the expected sources, resulting in a complete misalignment with the expected data.",
+    "agent_response": {
+      "selected_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "Factory identifies as cement manufacturer... NACE code C23.51 linked to cement"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex I | Section 3.7",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Manufacture of cement clinker... associated with NACE code C23.51"
+        }
+      ],
+      "reasoning_logic": "Mock reasoning: The activity clearly falls under manufacture of cement as per the NACE code provided in the context."
+    },
+    "ground_truth": {
+      "correct_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "A company develops and manufactures smart grid switchgear and substations. The dossier lists NACE C27.1 and C33.14. Marketing materials claim the activity is eligible under \"Activity 3.22 – Manufacture of smart-grid equipment\" and uses the slogan \"Green grid certified\"."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2023/2485/oj",
+          "quote_anchor": "(2) the following Sections 3.18., 3.19., 3.20. and 3.21. are added: ‘3.18.   Manufacture of automotive and mobility components",
+          "locator": "Annex I | Section ",
+          "version": "OJ L, 21.11.2023"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2023/2485/oj",
+          "quote_anchor": "3.20.   Manufacture, installation, and servicing of high, medium and low voltage electrical equipment for electrical transmission and distribution that result in or enable a substantial contribution to climate change mitigation Description of the activity",
+          "locator": "Annex I | Section 3.20",
+          "version": "OJ L, 21.11.2023"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2023/2485/oj",
+          "quote_anchor": "The economic activities in this category could be associated with several NACE codes, in particular, C27.1, C27.12, C27.9, C28.2, C33.12, C33.13, C33.14, C33.2, and F43.21, in accordance with the statistical classification of economic activities established by Regulation (EC) No 1893/2006",
+          "locator": "Annex I | Section 3.20",
+          "version": "OJ L, 21.11.2023"
+        }
+      ],
+      "reasoning_logic": "The described products (switchgear/substations) and NACE codes (C27.1, C33.14) map to Section 3.20. The cited “Activity 3.22” is not part of the added Manufacturing sections (the update adds Sections 3.18–3.21), so eligibility mapping should use the correct existing activity reference."
+    }
+  }
+]

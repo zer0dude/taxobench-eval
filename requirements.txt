@@ -1,0 +1,6 @@
+deepeval
+langsmith
+openai
+google-genai
+anthropic
+python-dotenv

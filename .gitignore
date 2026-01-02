@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+.env
+
+# IntelliJ / VSCode
+.idea/
+.vscode/
+
+# DeepEval
+.deepeval/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Results (optional, but keeping them locally might be better if they change often)
+# results/

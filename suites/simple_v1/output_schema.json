@@ -1,0 +1,37 @@
+{
+    "type": "object",
+    "properties": {
+        "selected_option": {
+            "type": "string",
+            "enum": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "description": "The selected option letter."
+        },
+        "required_facts": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "List of specific technical facts used for reasoning."
+        },
+        "legal_source": {
+            "type": "string",
+            "description": "The exact legal citation (Annex and Section)."
+        },
+        "reasoning_logic": {
+            "type": "string",
+            "description": "Explanation of the decision."
+        }
+    },
+    "required": [
+        "selected_option",
+        "required_facts",
+        "legal_source",
+        "reasoning_logic"
+    ],
+    "additionalProperties": false
+}
