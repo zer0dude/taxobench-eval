@@ -1,0 +1,16 @@
+{
+    "version": "1.0.0",
+    "author": "Arbor Bench Team",
+    "created_date": "2026-01-18",
+    "description": "Adversarial benchmark for Manufacturing eligibility. Tests ability to distinguish technical dossier facts from marketing/executive misdirection.",
+    "legal_context": {
+        "primary_regulation": "Climate Delegated Act (EU) 2021/2139",
+        "major_amendment": "Commission Delegated Regulation (EU) 2023/2485",
+        "consolidation_date": "2026-01-18"
+    },
+    "metrics_targeted": [
+        "Option Accuracy",
+        "Citation Grounding",
+        "Logic Consistency"
+    ]
+}

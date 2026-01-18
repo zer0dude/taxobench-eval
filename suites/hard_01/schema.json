@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "selected_option": {
+            "type": "string",
+            "enum": [
+                "A",
+                "B",
+                "C",
+                "D"
+            ],
+            "description": "The chosen MCQ option."
+        },
+        "evidence_ledger": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "evidence_type": {
+                        "type": "string",
+                        "enum": [
+                            "internal_fact",
+                            "external_source"
+                        ],
+                        "description": "Output 'internal_fact' for context info, 'external_source' for EU Taxonomy legislation."
+                    },
+                    "source": {
+                        "type": "string",
+                        "description": "For internal_fact: 'context_snippet', 'question_text', or 'attachment'. For external_source: The ELI citation (e.g. 'ELI:reg_del/2021/2139/oj')."
+                    },
+                    "locator": {
+                        "type": "string",
+                        "description": "REQUIRED for external_source (Format: 'Annex X | Section Y'). OMIT for internal_fact."
+                    },
+                    "version": {
+                        "type": "string",
+                        "description": "REQUIRED for external_source (e.g. 'OJ L 442, 09.12.2021'). OMIT for internal_fact."
+                    },
+                    "quote_anchor": {
+                        "type": "string",
+                        "description": "Verbatim quote. For internal_fact: from context. For external_source: from legislation."
+                    }
+                },
+                "required": [
+                    "evidence_type",
+                    "source",
+                    "quote_anchor"
+                ]
+            }
+        },
+        "reasoning_logic": {
+            "type": "string",
+            "description": "Forensic explanation of why the evidence leads to the selected option."
+        }
+    },
+    "required": [
+        "selected_option",
+        "evidence_ledger",
+        "reasoning_logic"
+    ]
+}

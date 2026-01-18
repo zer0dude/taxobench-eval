@@ -1,0 +1,26 @@
+[
+    {
+        "input": {
+            "context": "Plant manufactures primary aluminium (NACE C24.42). Report headline: 'Greening the Steel Industry'.",
+            "question": "Which Taxonomy reference matches the operation?"
+        },
+        "output": {
+            "selected_option": "A",
+            "evidence_ledger": [
+                {
+                    "evidence_type": "internal_fact",
+                    "source": "context_snippet",
+                    "quote_anchor": "Plant manufactures primary aluminium (NACE C24.42). Report headline: 'Greening the Steel Industry'"
+                },
+                {
+                    "evidence_type": "external_source",
+                    "source": "ELI:reg_del/2021/2139/oj",
+                    "locator": "Annex I | Section 3.8",
+                    "version": "OJ L 442, 09.12.2021",
+                    "quote_anchor": "3.8. Manufacture of aluminium  Description of the activity Manufacture of aluminium through primary alumina (bauxite) process or secondary aluminium recycling. The economic activities in this category could be associated with NACE code C24.42, C24.53 in accordance with the statistical classification of economic activities established by Regulation (EC) No 1893/2006."
+                }
+            ],
+            "reasoning_logic": "The technical NACE code C24.42 and production output 'primary aluminium' map directly to Section 3.8. The marketing headline regarding 'Steel' is a misdirection and irrelevant to the legal mapping of the actual operation."
+        }
+    }
+]

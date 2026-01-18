@@ -1,0 +1,12 @@
+{
+    "suite_id": "hard-01",
+    "suite_name": "Hard 01",
+    "components": {
+        "metadata": "metadata.json",
+        "instructions": "instructions.md",
+        "output_schema": "schema.json",
+        "few_shot_examples": "examples.json",
+        "test_dataset": "dataset.json",
+        "attachments": "attachments"
+    }
+}
