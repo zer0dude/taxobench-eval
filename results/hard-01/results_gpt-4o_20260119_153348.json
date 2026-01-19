@@ -1,0 +1,356 @@
+[
+  {
+    "id": "ENE-HARD-001",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'A' matches the ground truth.",
+    "facts_score": 0.038126169617755265,
+    "facts_reason": "The core words of the actual quotes differ significantly from the expected context, indicating a complete misalignment. The actual output quotes focus on technical and environmental aspects of a solar project, while the expected output quotes pertain to authorization, assurance, and marketing details. This discrepancy results in a failure to meet the hallucination check, leading to a score of zero.",
+    "source_score": 0.11522018298794812,
+    "source_reason": "The actual output contains only one source, which is a partial match to one of the expected sources, but it lacks the other expected sources entirely. The core words of the actual quote differ from the expected quotes, leading to a score of 0 due to hallucination. Additionally, the expected sources from 'ELI:reg/2020/852/oj' are completely missing, resulting in a significant recall issue. The locator and version in the actual output match one of the expected entries, but this is insufficient to offset the major discrepancies in source and quote content.",
+    "agent_response": {
+      "selected_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "attachment",
+          "quote_anchor": "AVSP is documented as grid-connected electricity generation using solar PV technology with export capacity and boundary metering (E-03; permit excerpt reviewed in data room)."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "attachment",
+          "quote_anchor": "Asset-level CRVA completed, identifying relevant physical climate hazards (heat, drought, extreme precipitation, wildfire risk indicators, wind) using scenario-based screening and site-specific hazard maps (E-01)."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "attachment",
+          "quote_anchor": "Design response register links each material risk to measures (e.g., upgraded drainage sizing, erosion control, heat-rated components, extreme-weather O&M procedures) and includes residual risk tracking and monitoring indicators (E-02; E-03; E-04)."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "attachment",
+          "quote_anchor": "Waste & end-of-life plan defines waste streams, contractor obligations, recycling pathways, and dismantling approach where feasible; supplier declarations cover recyclability/dismantling considerations for key components (E-06; E-09)."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "attachment",
+          "quote_anchor": "Biodiversity screening identifies sensitive habitats and includes exclusion zones and timing constraints; EIA decision extract includes mitigation commitments implemented via CEMP and construction controls (E-08; E-05; E-07)."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex II | Section 4.1",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Annex II | Section 4.1 — Electricity generation using solar photovoltaic technology"
+        }
+      ],
+      "reasoning_logic": "The AVSP project is documented as a grid-connected solar PV electricity generation facility, which aligns with the activity description in Annex II | Section 4.1. The assurance extract confirms that the project meets the substantial contribution criteria for climate change adaptation, including a completed climate risk and vulnerability assessment, adaptation solutions implemented, and DNSH criteria for circular economy and biodiversity. Therefore, the evidence supports full Taxonomy alignment for the adaptation objective."
+    },
+    "ground_truth": {
+      "correct_option": "A",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "The pack includes a permit excerpt identifying AVSP as a grid-connected solar photovoltaic electricity generation project operated by an SDG entity."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "SDG includes External Assurance Extracts summarising criterion-level findings."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "PERMIT-AVSP-01",
+          "quote_anchor": "The competent authority hereby authorises the construction and operation of an electricity generation facility using solar photovoltaic technology, designated Alto Vale Solar Park (“AVSP”), for the purpose of electricity generation and export to the public electricity grid."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "ASSURE-ALIGN-AVSP-01",
+          "quote_anchor": "Findings table (Annex II | Section 4.1 — Solar PV electricity generation): SC-ADAPT-1 — Met; SC-ADAPT-2 — Met; SC-ADAPT-3 — Met; DNSH-CE — Met; DNSH-BIODIVERSITY — Met."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "ASSURE-MSG-SDG-01",
+          "quote_anchor": "Criterion-Level Findings (Minimum safeguards): MS-1 — Met; MS-2 — Met; MS-3 — Met; MS-4 — Met; MS-5 — Met; MS-6 — Met."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "MKT-AVSP-01",
+          "quote_anchor": "Excerpt from marketing brochure"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg/2020/852/oj",
+          "locator": "Article 3",
+          "version": "OJ L 198, 22.06.2020",
+          "quote_anchor": "an economic activity shall qualify as environmentally sustainable where that economic activity: (a) contributes substantially to one or more of the environmental objectives"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg/2020/852/oj",
+          "locator": "Article 3",
+          "version": "OJ L 198, 22.06.2020",
+          "quote_anchor": "(b) does not significantly harm any of the environmental objectives ... (c) is carried out in compliance with the minimum safeguards"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg/2020/852/oj",
+          "locator": "Article 3",
+          "version": "OJ L 198, 22.06.2020",
+          "quote_anchor": "(d) complies with technical screening criteria that have been established by the Commission"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg/2020/852/oj",
+          "locator": "Article 18(1)",
+          "version": "OJ L 198, 22.06.2020",
+          "quote_anchor": "minimum safeguards ... shall be procedures ... to ensure the alignment with the OECD Guidelines ... and the UN Guiding Principles"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex II | Section 4.1",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Construction or operation of electricity generation facilities that produce electricity using solar photovoltaic (PV) technology."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex II | Section 4.1",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "identified ... by performing a robust climate risk and vulnerability assessment with the following steps: (a) screening ... (b) ... materiality ... (c) ... adaptation solutions"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex II | Section 4.1",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "The activity assesses availability of and, where feasible, uses equipment and components of high durability and recyclability"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex II | Section 4.1",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "The activity complies with the criteria set out in Appendix D to this Annex."
+        }
+      ],
+      "reasoning_logic": "To conclude full Taxonomy alignment for climate change adaptation, the activity must satisfy Article 3 of the Taxonomy Regulation: (i) substantial contribution to adaptation via the applicable technical screening criteria, (ii) DNSH to the other objectives as required by the delegated act, (iii) minimum safeguards (Article 18), and (iv) compliance with the relevant technical screening criteria. The permit excerpt establishes that AVSP is electricity generation using solar photovoltaic technology and exports to the public grid, matching the Annex II | Section 4.1 activity scope. The External Assurance Extract ASSURE-ALIGN-AVSP-01 reports criterion-level findings of 'Met' for the Annex II | 4.1 adaptation substantial contribution criteria (including a climate risk and vulnerability assessment and implemented adaptation solutions) and reports 'Met' for the required DNSH items for circular economy and biodiversity (Appendix D). The minimum safeguards extract ASSURE-MSG-SDG-01 reports 'Met' across the minimum safeguards items at SDG group level. The marketing brochure contains only high-level claims and explicitly does not reproduce technical or legal extracts, so it cannot override the primary evidence. Therefore, based on authoritative evidence in the pack (permit + assurance extracts) and the cited legal requirements, AVSP can be concluded Taxonomy-aligned for the climate change adaptation objective under Annex II | Section 4.1."
+    }
+  },
+  {
+    "id": "ENE-HARD-002",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'C' matches the ground truth.",
+    "facts_score": 0.2666799043161186,
+    "facts_reason": "The actual output contains some relevant facts, such as the electricity output rights and the contractor's lack of trading rights, which align with the expected output. However, it fails to include key expected facts like the CEO's statement on asset operation and the detailed roles of the owner and contractor. Additionally, the core words of the actual quotes differ significantly from the expected context, leading to a low score due to hallucination issues.",
+    "source_score": 0.3060455270823438,
+    "source_reason": "The actual output contains a correct source, locator, and version for one expected entry, aligning with Step 4. However, it misses two expected sources, resulting in a significant deduction per Step 3. The quote in the actual output differs from the expected, leading to a zero score in Step 2 for that entry.",
+    "agent_response": {
+      "selected_option": "C",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "Serra Branca solar site is repeatedly highlighted as part of SDG’s 'solar generation portfolio'. A CEO statement on the SDG website reads: 'Our operation of Serra Branca demonstrates how we deliver EU Taxonomy alignment under Section 4.1 — Solar photovoltaic electricity generation.'"
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "attachment",
+          "quote_anchor": "3.1 Electricity output. All electricity generated by the Plant and all related attributes, revenues, and settlement rights are for the account of the Owner (or its designated offtaker/trader)."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "attachment",
+          "quote_anchor": "3.2 No trading/settlement rights. The Contractor shall have no rights to sell, trade, settle, or otherwise commercialise electricity output from the Plant and shall not enter into any power purchase agreement or market participation arrangement on behalf of the Owner unless explicitly authorised in writing by the Owner for a specific task."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex II | Section 4.1",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "4.1. Electricity generation from solar photovoltaic technology. Description of the activity: Construction and operation of electricity generation facilities that produce electricity from solar photovoltaic technology."
+        }
+      ],
+      "reasoning_logic": "The internal documents indicate that the electricity output and related rights from the Serra Branca plant are retained by the Owner, not SDG. The Contractor (SDG) does not have rights to sell or trade the electricity, which contradicts the claim of alignment with Section 4.1 of the EU Taxonomy, which pertains to the operation of electricity generation facilities. Therefore, despite the marketing claims, the documents do not support SDG's claim of Taxonomy alignment under Section 4.1."
+    },
+    "ground_truth": {
+      "correct_option": "C",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "WEB-SB-01",
+          "quote_anchor": "Serra Branca — Part of the Solaria Delta solar portfolio ... We operate and maintain solar assets to high standards—leveraging robust monitoring, disciplined maintenance routines, and experienced field teams to ensure strong performance."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "WEB-SB-01",
+          "quote_anchor": "CEO statement (roadshow Q&A): “Serra Branca is a great example of how we operate assets with discipline and consistency. Our teams ensure availability and rapid response, so the plant performs reliably for the long term.”"
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "CONTRACT-SB-01",
+          "quote_anchor": "Parties: 1. Serra Branca Solar, S.A. (“Owner”) 2. Solaria Delta Services, S.A. (“Contractor”)."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "CONTRACT-SB-01",
+          "quote_anchor": "The Contractor shall provide operations support, preventive maintenance, corrective maintenance, inspections, and reporting services for the Plant..."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "CONTRACT-SB-01",
+          "quote_anchor": "The Owner remains the operator of record and/or permit holder for the Plant ... Nothing in this Agreement shall be construed as appointing the Contractor as operator of record or transferring any permitting responsibilities to the Contractor."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "CONTRACT-SB-01",
+          "quote_anchor": "All electricity generated by the Plant and all related attributes, revenues, and settlement rights are for the account of the Owner (or its designated offtaker/trader)."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "CONTRACT-SB-01",
+          "quote_anchor": "The Contractor shall have no rights to sell, trade, settle, or otherwise commercialise electricity output from the Plant..."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "QTR-SB-01",
+          "quote_anchor": "Prepared by: Solaria Delta Services, S.A. (“SDG Services”) ... Prepared for: Serra Branca Solar, S.A. (“Plant Owner”)."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "QTR-SB-01",
+          "quote_anchor": "Scope note: This quarterly report covers service delivery and O&M performance. It does not cover electricity sales, trading, market settlement, or revenue. Commercial offtake arrangements and electricity sales remain the responsibility of the Plant Owner..."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "QTR-SB-01",
+          "quote_anchor": "Service Performance KPIs (Q3 2025) ... Technical availability ... Response time for critical incidents ... Mean time to repair (MTTR) ... Preventive maintenance completion..."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "QTR-SB-01",
+          "quote_anchor": "The following items are outside SDG Services’ contractual responsibilities ... Electricity trading ... settlement, invoicing for electricity sales ... Permit-holder obligations and operator-of-record responsibilities."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex II | Section 4.1",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Construction or operation of electricity generation facilities that produce electricity using solar photovoltaic (PV) technology."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex I | Section 7.6",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Installation, maintenance and repair of renewable energy technologies, on-site."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex I | Section 7.6",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "The activity consists in ... (a) installation, maintenance and repair of solar photovoltaic systems and the ancillary technical equipment;"
+        }
+      ],
+      "reasoning_logic": "For Taxonomy screening, the activity must be classified based on what SDG is actually doing (economic reality and contractual rights), not on marketing language. Annex II | Section 4.1 concerns the construction or operation of electricity generation facilities producing electricity using solar PV technology. The pack’s authoritative contractual evidence shows SDG Services is engaged as a contractor to provide O&M services: the contract names Serra Branca Solar, S.A. as Owner and Solaria Delta Services, S.A. as Contractor; it limits SDG’s obligations to maintenance and reporting services; it states the Owner remains operator of record/permit holder; it allocates all electricity output, revenues and settlement rights to the Owner; and it explicitly denies the Contractor any rights to sell or commercialise electricity output. The quarterly O&M report reinforces that SDG Services is providing service delivery measured by KPIs and explicitly excludes electricity sales/trading/settlement and operator-of-record responsibilities from SDG Services’ scope. By contrast, the website extract and CEO quote use loose, public-facing language (“operate assets”) and do not establish legal control or electricity sales rights. Therefore, Serra Branca should not be treated as SDG’s electricity generation activity; it should be screened under a services/enabling activity scope such as Annex I | Section 7.6 (installation/maintenance/repair of renewable energy technologies)."
+    }
+  },
+  {
+    "id": "ENE-HARD-003",
+    "correct_option": true,
+    "mcq_score": 1.0,
+    "mcq_reason": "The selected option 'C' matches the ground truth.",
+    "facts_score": 0.2341621263975066,
+    "facts_reason": "The actual output contains some relevant information but lacks alignment with the expected output. The core words in the actual quotes differ significantly from the expected context, particularly in taxonomy classification and operational details, leading to a failure in Step 2. The expected fact cores related to solar PV electricity generation and specific taxonomy alignment are missing, resulting in a significant deduction in Step 3. The boundaries of the information provided are not well-aligned with the expected output, further impacting the score.",
+    "source_score": 0.24233217519710273,
+    "source_reason": "The actual output contains a correct source, locator, and version for one entry, aligning with the expected output. However, it misses four expected sources, resulting in a significant recall issue. The quote anchor in the actual output is slightly different but not critically misaligned with the expected core words, avoiding a score of zero. Minor schema issues are not present.",
+    "agent_response": {
+      "selected_option": "C",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "attachment",
+          "quote_anchor": "Asset type: Battery Energy Storage System (BESS) providing grid-connected flexibility through controlled charging (import) and discharging (export) operations. 2. Technical Overview (as operated) 2.1 Rated Capacity (Nameplate) 2.2 Functional Description Ribeira Flex operates as a grid-connected storage asset that: charges from the grid (import) when instructed by dispatch/control signals or when operating schedules require charging; and discharges to the grid (export) to provide flexibility services and energy delivery when instructed."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "attachment",
+          "quote_anchor": "Taxonomy classification (SDG internal mapping): NACE: D35.11 — Production of electricity EU Taxonomy: Annex II | Section 4.1 — Solar photovoltaic electricity generation Statement: “Ribeira Flex is EU Taxonomy-aligned under Section 4.1.”"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex II | Section 4.1",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "4.1. Electricity generation using solar photovoltaic technology Description of the activity Construction or operation of electricity generation facilities that produce electricity from solar photovoltaic (PV) technology."
+        }
+      ],
+      "reasoning_logic": "The Ribeira Flex asset is described as a Battery Energy Storage System (BESS) that provides grid-connected flexibility through charging and discharging operations. This does not align with the activity described in Annex II, Section 4.1, which pertains to electricity generation using solar photovoltaic technology. The internal mapping to NACE D35.11 and the claim of alignment under Section 4.1 are contradicted by the technical description of the asset as a storage system, not a solar PV electricity generation facility. Therefore, Ribeira Flex is not eligible under Annex II, Section 4.1."
+    },
+    "ground_truth": {
+      "correct_option": "C",
+      "evidence_ledger": [
+        {
+          "evidence_type": "internal_fact",
+          "source": "context_snippet",
+          "quote_anchor": "SDG’s website presents “Ribeira Flex” as part of its solar portfolio and claims it is “EU Taxonomy-aligned under Annex II, Section 4.1 (solar PV electricity generation)” with NACE D35.11."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "WEB-RF-01",
+          "quote_anchor": "Ribeira Flex — Taxonomy alignment: “Annex II, Section 4.1 — Electricity generation using solar photovoltaic technology”; NACE: D35.11."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "QTR-RF-01",
+          "quote_anchor": "Ribeira Flex — Full inventory (quarterly): Battery racks (BESS), Power Conversion System (PCS) / inverters, transformer and switchgear at grid connection point."
+        },
+        {
+          "evidence_type": "internal_fact",
+          "source": "QTR-RF-01",
+          "quote_anchor": "Operational summary: The asset charges from the grid (import) and discharges to the grid (export) under dispatch/control signals."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex II | Section 4.1",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Construction or operation of electricity generation facilities that produce electricity using solar photovoltaic (PV) technology."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Recital (6)",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "references should be understood as indicative and should not prevail over the specific definition of the activity"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg_del/2021/2139/oj",
+          "locator": "Annex I | Section 4.10",
+          "version": "OJ L 442, 09.12.2021",
+          "quote_anchor": "Construction and operation of electricity storage installations that are connected to the grid."
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg/2020/852/oj",
+          "locator": "Article 3",
+          "version": "OJ L 198, 22.06.2020",
+          "quote_anchor": "an economic activity shall qualify as environmentally sustainable where that economic activity: (a) contributes substantially to one or more of the environmental objectives"
+        },
+        {
+          "evidence_type": "external_source",
+          "source": "ELI:reg/2020/852/oj",
+          "locator": "Article 3",
+          "version": "OJ L 198, 22.06.2020",
+          "quote_anchor": "(d) complies with technical screening criteria that have been established by the Commission"
+        }
+      ],
+      "reasoning_logic": "Checkmark 1 (Correct activity scope / classification): Annex II, Section 4.1 applies only to the “construction or operation of electricity generation facilities that produce electricity using solar photovoltaic (PV) technology.” The QTR evidence for Ribeira Flex describes a Battery Energy Storage System (battery racks + PCS/inverters) and explicitly characterises operation as charging from the grid (import) and discharging to the grid (export). This technical function is electricity storage, not solar PV generation. Therefore, even though WEB-RF-01 asserts “Annex II, Section 4.1” and NACE D35.11, that claim is not decisive: the delegated act itself clarifies NACE references are only indicative and do not prevail over the activity definition. Since Ribeira Flex does not match the Annex II, Section 4.1 activity definition, it is not eligible under 4.1 and cannot be concluded aligned under 4.1. (Separately, the delegated act includes a storage activity definition—Annex I, Section 4.10—consistent with the QTR-described BESS asset, which reinforces the classification conclusion, even though this question only asks whether 4.1 alignment can be concluded.) Checkmark 2 (Alignment requires technical screening criteria for the correctly scoped activity): Under Article 3 of Regulation (EU) 2020/852, an activity qualifies as environmentally sustainable only if it meets the required conditions including compliance with the Commission’s technical screening criteria; a mis-scoped activity cannot be treated as aligned under the wrong activity section. Hence the correct answer is C."
+    }
+  }
+]

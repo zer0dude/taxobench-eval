@@ -4,3 +4,5 @@ openai
 google-genai
 anthropic
 python-dotenv
+pypdf
+python-docx

@@ -1,18 +1,14 @@
 import json
 import os
 from typing import Dict, Any
-from google import genai
-from google.genai import types
+from openai import OpenAI
 from .base import BaseAgent
 from langsmith import traceable
 
-class GeminiAgent(BaseAgent):
-    def __init__(self, model_name: str = "gemini-2.0-flash"):
-        """
-        Initializes the Gemini agent using the new google-genai SDK.
-        """
+class GPT4oAgent(BaseAgent):
+    def __init__(self, model_name: str = "gpt-4o"):
         super().__init__(model_name)
-        self.client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
+        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
     def _construct_system_prompt(self) -> str:
         prompt = self.system_prompt
@@ -22,15 +18,16 @@ class GeminiAgent(BaseAgent):
                  prompt += f"\nInput: {json.dumps(example['input'])}\nOutput: {json.dumps(example['output'])}\n"
         return prompt
 
-    @traceable(run_type="llm", name="GeminiAgent")
+    @traceable(run_type="llm", name="GPT4oAgent")
     def answer_question(self, question_data: Dict[str, Any]) -> Dict[str, Any]:
         """
-        Answers a question using Google's Gemini model.
+        Answers a question using OpenAI's GPT-4o model.
         """
+        attachments_text = self.get_attachments_text(question_data.get('question_id'))
+        
         user_prompt = (
-            f"{self._construct_system_prompt()}\n\n"
             f"Context: {question_data.get('context_snippet')}\n"
-            f"Context: {question_data.get('context_snippet')}\n"
+            f"Attachments: {attachments_text}\n"
             f"Question: {question_data.get('question_text')}\n"
             "Options:\n"
             f"A: {question_data['options']['A']}\n"
@@ -38,21 +35,23 @@ class GeminiAgent(BaseAgent):
             f"C: {question_data['options']['C']}\n"
             f"D: {question_data['options']['D']}\n"
         )
-        
+
         try:
-            response = self.client.models.generate_content(
+            response = self.client.chat.completions.create(
                 model=self.model_name,
-                contents=user_prompt,
-                config=types.GenerateContentConfig(
-                    response_mime_type="application/json",
-                    response_schema=self.output_schema # Passing the schema directly to Gemini
-                )
+                messages=[
+                    {"role": "system", "content": self._construct_system_prompt()},
+                    {"role": "user", "content": user_prompt}
+                ],
+                response_format={"type": "json_object"},
+                temperature=0.0
             )
-            
-            return json.loads(response.text)
+
+            content = response.choices[0].message.content
+            return json.loads(content)
         except Exception as e:
-             return {
-                "selected_option": "D",
+            return {
+                "selected_option": "E", # Defaulting to E/Error on crash to not break pipeline
                 "required_facts": [],
                 "legal_source": "None",
                 "reasoning_logic": f"Error: {str(e)}"

@@ -12,7 +12,7 @@ Evaluate the provided economic activity against your knowledge of the EU Taxonom
 5. **Evidence Types & Sources:**
    - **Internal Facts (`internal_fact`):** Information strictly from the provided task material.
      - **Fields:** `source`, `quote_anchor`.
-     - **Allowed Sources:** `"context_snippet"`, `"question_text"`, `"attachment"`.
+     - **Allowed Sources:** `"context_snippet"`, `"question_text"`, or the **exact filename** of the attachment (e.g. "Report.pdf").
      - **DO NOT INCLUDE:** `locator`, `version`.
    - **External Sources (`external_source`):** Legal references from the EU Taxonomy.
      - **Fields:** `source`, `quote_anchor`, `locator`, `version`.

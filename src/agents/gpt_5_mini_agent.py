@@ -5,8 +5,8 @@ from openai import OpenAI
 from .base import BaseAgent
 from langsmith import traceable
 
-class OpenAIAgent(BaseAgent):
-    def __init__(self, model_name: str = "gpt-4o"):
+class GPT5MiniAgent(BaseAgent):
+    def __init__(self, model_name: str = "gpt-5-mini"):
         super().__init__(model_name)
         self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
@@ -18,13 +18,16 @@ class OpenAIAgent(BaseAgent):
                  prompt += f"\nInput: {json.dumps(example['input'])}\nOutput: {json.dumps(example['output'])}\n"
         return prompt
 
-    @traceable(run_type="llm", name="OpenAIAgent")
+    @traceable(run_type="llm", name="GPT5MiniAgent")
     def answer_question(self, question_data: Dict[str, Any]) -> Dict[str, Any]:
         """
-        Answers a question using OpenAI's GPT-4o model.
+        Answers a question using OpenAI's GPT-5-Mini model.
         """
+        attachments_text = self.get_attachments_text(question_data.get('question_id'))
+        
         user_prompt = (
             f"Context: {question_data.get('context_snippet')}\n"
+            f"Attachments: {attachments_text}\n"
             f"Question: {question_data.get('question_text')}\n"
             "Options:\n"
             f"A: {question_data['options']['A']}\n"
@@ -48,7 +51,7 @@ class OpenAIAgent(BaseAgent):
             return json.loads(content)
         except Exception as e:
             return {
-                "selected_option": "D", # Defaulting to D/Error on crash to not break pipeline
+                "selected_option": "E", # Defaulting to E/Error on crash to not break pipeline
                 "required_facts": [],
                 "legal_source": "None",
                 "reasoning_logic": f"Error: {str(e)}"

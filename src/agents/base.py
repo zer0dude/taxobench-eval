@@ -22,6 +22,42 @@ class BaseAgent(ABC):
         self.few_shot_examples = few_shot_examples
         self.attachments_path = attachments_path
 
+    def get_attachments_text(self, question_id: str) -> str:
+        """
+        Retrieves text from all attachments associated with a specific question.
+        Attachments are expected to be in: self.attachments_path / question_id / <files>
+        """
+        if not self.attachments_path:
+            return ""
+
+        target_dir = Path(self.attachments_path) / question_id
+        if not target_dir.exists():
+            return ""
+
+        combined_text = []
+        for file_path in target_dir.iterdir():
+            if file_path.suffix.lower() == ".pdf":
+                try:
+                    from pypdf import PdfReader
+                    reader = PdfReader(file_path)
+                    text = ""
+                    for page in reader.pages:
+                        text += page.extract_text() + "\n"
+                    combined_text.append(f"--- Attachment: {file_path.name} ---\n{text}")
+                except Exception as e:
+                    combined_text.append(f"--- Attachment: {file_path.name} (Error reading PDF: {e}) ---")
+            
+            elif file_path.suffix.lower() == ".docx":
+                try:
+                    import docx
+                    doc = docx.Document(file_path)
+                    text = "\n".join([para.text for para in doc.paragraphs])
+                    combined_text.append(f"--- Attachment: {file_path.name} ---\n{text}")
+                except Exception as e:
+                    combined_text.append(f"--- Attachment: {file_path.name} (Error reading DOCX: {e}) ---")
+
+        return "\n\n".join(combined_text)
+
     @abstractmethod
     def answer_question(self, question_data: Dict[str, Any]) -> Dict[str, Any]:
         """

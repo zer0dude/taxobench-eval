@@ -11,21 +11,18 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 from src.core.loader import SuiteLoader
 from src.core.evaluator import Evaluator
-from src.agents.openai_agent import OpenAIAgent
-from src.agents.gemini_agent import GeminiAgent
-from src.agents.anthropic_agent import AnthropicAgent
+from src.agents.gpt_4o_agent import GPT4oAgent
+from src.agents.gpt_5_mini_agent import GPT5MiniAgent
 from src.agents.arbor_agent import ArborAgent
 
 # Load environment variables
 load_dotenv()
 
 def get_agent(agent_name: str):
-    if agent_name == "openai":
-        return OpenAIAgent()
-    elif agent_name == "gemini":
-        return GeminiAgent()
-    elif agent_name == "anthropic":
-        return AnthropicAgent()
+    if agent_name == "gpt-4o":
+        return GPT4oAgent()
+    elif agent_name == "gpt-5-mini":
+        return GPT5MiniAgent()
     elif agent_name == "arbor":
         return ArborAgent()
     else:
@@ -34,7 +31,7 @@ def get_agent(agent_name: str):
 
 def main():
     parser = argparse.ArgumentParser(description="TaxoBench Eval - Benchmark Rig")
-    parser.add_argument("--agent", type=str, required=True, choices=["openai", "gemini", "anthropic", "arbor"], help="The agent to benchmark")
+    parser.add_argument("--agent", type=str, required=True, choices=["gpt-4o", "gpt-5-mini", "arbor"], help="The agent to benchmark")
     parser.add_argument("--suite", type=str, required=True, help="Path to the test suite directory (e.g., suites/TAXONOMY-MANUFACTURING-SCREEN-2026-V1)")
     args = parser.parse_args()
 

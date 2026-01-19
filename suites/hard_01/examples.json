@@ -2,6 +2,7 @@
     {
         "input": {
             "context": "Plant manufactures primary aluminium (NACE C24.42). Report headline: 'Greening the Steel Industry'.",
+            "attachments": "--- Attachment: PRODUCTION_REPORT_2024.pdf ---\nOutput: 100,000 tonnes of primary aluminium per year. Energy source: Hydroelectric.",
             "question": "Which Taxonomy reference matches the operation?"
         },
         "output": {
@@ -11,6 +12,11 @@
                     "evidence_type": "internal_fact",
                     "source": "context_snippet",
                     "quote_anchor": "Plant manufactures primary aluminium (NACE C24.42). Report headline: 'Greening the Steel Industry'"
+                },
+                {
+                    "evidence_type": "internal_fact",
+                    "source": "PRODUCTION_REPORT_2024.pdf",
+                    "quote_anchor": "Output: 100,000 tonnes of primary aluminium per year"
                 },
                 {
                     "evidence_type": "external_source",

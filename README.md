@@ -12,14 +12,14 @@ It goes beyond simple "Right/Wrong" answers by rigorously evaluating the **evide
     *   **Legal Source Validity**: Did the agent cite the correct EU Regulation (ELI) and locator (Annex/Section)?
 *   **Strict Hallucination Detection**: Implements a **"Core Verbatim"** check. Quotes are normalized and checked against ground truth; any core deviation results in a score of 0.
 *   **Modular Test Suites**: Supports plug-and-play test suites (e.g., Manufacturing, Climate Change) defined via JSON/Markdown configuration.
-*   **Multi-Agent Support**: Ready-to-use wrappers for **OpenAI**, **Anthropic**, **Gemini**, and **Arbor** (internal) agents.
+*   **Multi-Agent Support**: Ready-to-use wrappers for **GPT-4o**, **GPT-5-Mini**, and **Arbor** (internal) agents.
 *   **Detailed Reporting**: Generates JSON reports with score breakdowns for every question.
 
 ## 🛠️ Installation
 
 Prerequisites:
 - Python 3.10+
-- Valid API Keys for the agents you intend to test (OPENAI_API_KEY, ANTHROPIC_API_KEY, etc.)
+- Valid API Keys for the agents you intend to test (OPENAI_API_KEY, etc.)
 
 ```bash
 git clone https://github.com/zer0dude/taxobench-eval.git
@@ -35,8 +35,6 @@ Create a `.env` file in the root directory:
 
 ```ini
 OPENAI_API_KEY=sk-...
-ANTHROPIC_API_KEY=sk-...
-GOOGLE_API_KEY=...
 # Add other keys as needed
 ```
 
@@ -45,12 +43,12 @@ GOOGLE_API_KEY=...
 Run the benchmark using `src/main.py`. You must specify the **agent** and the **suite** directory.
 
 ```bash
-python src/main.py --agent openai --suite suites/TAXONOMY-MANUFACTURING-SCREEN-2026-V1
+python src/main.py --agent gpt-4o --suite suites/TAXONOMY-MANUFACTURING-SCREEN-2026-V1
 ```
 
 ### Available Arguments
 
-- `--agent`: The agent to test. Options: `openai`, `anthropic`, `gemini`, `arbor` (mock).
+- `--agent`: The agent to test. Options: `gpt-4o`, `gpt-5-mini`, `arbor` (mock).
 - `--suite`: Path to the test suite directory containing `manifest.json` and `dataset.json`.
 
 ## 📂 Project Structure

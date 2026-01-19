@@ -233,7 +233,7 @@
             "nace_spoofing",
             "misdirection"
         ],
-        "context_snippet": "SDG’s website presents “Ribeira Flex” as part of its solar portfolio and claims it is “EU Taxonomy-aligned under Annex II, Section 4.1 (solar PV electricity generation)” with NACE D35.11. In the same pack, a quarterly operations report for Ribeira Flex includes a full inventory and maintenance summary that lists battery racks and power conversion equipment and reports bidirectional import/export operation at the grid connection point.",
+        "context_snippet": "SDG’s website presents “Ribeira Flex” as part of its solar portfolio and claims it is “EU Taxonomy-aligned under Annex II, Section 4.1 (solar PV electricity generation)” with NACE D35.11. In the same pack, a quarterly operations report for Ribeira Flex includes a full inventory and maintenance summary.",
         "question_text": "Based on the pack, can Ribeira Flex be concluded Taxonomy-aligned under Annex II, Section 4.1 (electricity generation using solar photovoltaic technology) as SDG claims?",
         "options": {
             "A": "Yes — the pack supports concluding Ribeira Flex is Taxonomy-aligned under Annex II, Section 4.1.",

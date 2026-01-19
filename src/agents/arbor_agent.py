@@ -28,5 +28,5 @@ class ArborAgent(BaseAgent):
                     "quote_anchor": "Manufacture of cement clinker... associated with NACE code C23.51"
                 }
             ],
-            "reasoning_logic": "Mock reasoning: The activity clearly falls under manufacture of cement as per the NACE code provided in the context."
+            "reasoning_logic": "Mock reasoning: The activity clearly falls under manufacture of cement as per the NACE code provided in the context and confirmed by the attachments."
         }
