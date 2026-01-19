@@ -4,7 +4,7 @@
 
 It goes beyond simple "Right/Wrong" answers by rigorously evaluating the **evidence retrieval process**, distinguishing between internal factual recall and external legal citation accuracy.
 
-## 🚀 Key Features
+## Key Features
 
 *   **Granular Evaluation**: Uses custom `DeepEval` metrics to score:
     *   **MCQ Accuracy**: Did the agent pick the right classification?
@@ -15,7 +15,7 @@ It goes beyond simple "Right/Wrong" answers by rigorously evaluating the **evide
 *   **Multi-Agent Support**: Ready-to-use wrappers for **GPT-4o**, **GPT-5-Mini**, and **Arbor** (internal) agents.
 *   **Detailed Reporting**: Generates JSON reports with score breakdowns for every question.
 
-## 🛠️ Installation
+## Installation
 
 Prerequisites:
 - Python 3.10+
@@ -29,7 +29,7 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 Create a `.env` file in the root directory:
 
@@ -38,7 +38,7 @@ OPENAI_API_KEY=sk-...
 # Add other keys as needed
 ```
 
-## 🏃 Usage
+## Usage
 
 Run the benchmark using `src/main.py`. You must specify the **agent** and the **suite** directory.
 
@@ -51,7 +51,7 @@ python src/main.py --agent gpt-4o --suite suites/TAXONOMY-MANUFACTURING-SCREEN-2
 - `--agent`: The agent to test. Options: `gpt-4o`, `gpt-5-mini`, `arbor` (mock).
 - `--suite`: Path to the test suite directory containing `manifest.json` and `dataset.json`.
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 taxobench-eval/
@@ -69,7 +69,7 @@ taxobench-eval/
 └── requirements.txt
 ```
 
-## 📊 Evaluation Logic
+## Evaluation Logic
 
 The evaluator is designed to be **fair but rigorous**:
 
@@ -80,6 +80,6 @@ The evaluator is designed to be **fair but rigorous**:
     *   **Locators**: Loose matching allowed for legal locators (e.g., "Annex I | Section 3.7"), but active misleading info is penalized.
     *   **Boundaries**: Allow +/- 5 words tolerance for quote start/end.
 
-## 📄 License
+## License
 
 [MIT License](LICENSE)
