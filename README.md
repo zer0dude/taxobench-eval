@@ -1,6 +1,6 @@
 # TaxoBench Eval
 
-**TaxoBench Eval** is a sophisticated benchmarking framework designed to evaluate Large Language Model types (Agents) on their ability to perform **EU Taxonomy** classification and eligibility screening.
+**TaxoBench Eval** is a test benchmarking framework designed to evaluate Large Language Model types (Agents) on their ability to perform **EU Taxonomy** classification and eligibility screening.
 
 It goes beyond simple "Right/Wrong" answers by rigorously evaluating the **evidence retrieval process**, distinguishing between internal factual recall and external legal citation accuracy.
 
